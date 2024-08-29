@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://aulasvirtuales.udistrital.edu.co/recursos/basedatos/">
+        <link rel="canonical" href="https://aulasvirtuales.udistrital.edu.co/recursos/basedatos/" aria-label="Base de Datos">
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.3">
@@ -58,8 +58,11 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,13 +121,13 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
+
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
@@ -516,7 +519,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active" aria-label="base de datos 2">
         Base de datos
       </a>
       
@@ -536,22 +539,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#base-de-datos_1" class="md-nav__link">
+  <a href="#base-de-datos_1" class="md-nav__link"  aria-label="BASE DE DATOS 1">
     Base de datos
   </a>
   
-    <nav class="md-nav" aria-label="Base de datos">
+    <nav class="md-nav" >
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#crear-una-base-de-datos" class="md-nav__link">
+  <a href="#crear-una-base-de-datos" class="md-nav__link" aria-label="Base de datos">
     Crear una base de datos.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#edicion-de-la-base-de-datos" class="md-nav__link">
+  <a href="#edicion-de-la-base-de-datos" class="md-nav__link" aria-label="Base de Datos">
     Edición de la base de datos
   </a>
   
@@ -807,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -926,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1023,7 +1026,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#base-de-datos_1" class="md-nav__link">
+  <a href="#base-de-datos_1" class="md-nav__link" aria-label="Base de Datos 3 ">
     Base de datos
   </a>
   
@@ -1031,14 +1034,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#crear-una-base-de-datos" class="md-nav__link">
+  <a href="#crear-una-base-de-datos" class="md-nav__link" aria-label="Base de Datos ">
     Crear una base de datos.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#edicion-de-la-base-de-datos" class="md-nav__link">
+  <a href="#edicion-de-la-base-de-datos" class="md-nav__link" aria-label="Edición Base de Datos">
     Edición de la base de datos
   </a>
   
@@ -1078,22 +1081,22 @@
 </ul>
 <p>Para editar la Base de datos, es necesario poseer perfil de profesor, ingresar al aula virtual, dar clic en el botón “<em>Activar Edición</em>”, ubicarse en la sección de tema o semana y cliquear en el link “A<em>gregar un recurso o una actividad</em>” y elegir Base de datos. La edición de la base de datos tiene dos momentos: uno en el que se genera la estructura y funcionamiento del instrumento y otra donde se agregan los campos o variables sobre los cuales se generará la sistematización de datos.</p>
 <h3 id="crear-una-base-de-datos"><strong>Crear una base de datos.</strong></h3>
-<p><img alt="" src="/img/recursos/basedatos/basedatos01.png" /></p>
+<p><img alt="Crear Una Base de Datos" src="/img/recursos/basedatos/basedatos01.png" /></p>
 <p>Como todas las actividades se debe configurar de forma obligatoria el Nombre y opcionalmente la descripción. </p>
 <p>Luego se debe definir cómo se comportarán las <strong>entradas</strong> de los estudiantes, según los criterios que se muestran a continuación. Recuerde que las entradas se relacionan con los registros que ingresen los estudiantes.</p>
-<p><img alt="" src="/img/recursos/basedatos/basedatos02.png" /></p>
+<p><img alt="Agregar Base de Datos" src="/img/recursos/basedatos/basedatos02.png" /></p>
 <ul>
 <li><strong>Disponibilidad:</strong>  permite definir las fechas entre las cuales los estudiantes completarán la actividad y si luego de vencida la fecha, quedará visible para su </li>
 </ul>
 <p>lectura, aunque no puedan ingresar más entradas.</p>
-<p><img alt="" src="/img/recursos/basedatos/basedatos03.png" /></p>
+<p><img alt="Entradas" src="/img/recursos/basedatos/basedatos03.png" /></p>
 <ul>
 <li><strong>Calificación:</strong> define si será evaluable o no para los estudiantes y cuál será el método de su calificación.</li>
 </ul>
 <p>Una vez se ha terminado de configurar la base de datos pulsamos el botón Guardar cambios y mostrar. Una vez pulsado el botón de Guardar y mostrar nos aparecerá la pantalla para editar la base.</p>
 <h3 id="edicion-de-la-base-de-datos"><strong>Edición de la base de datos</strong></h3>
 <p>Primero se debe definir los campos que va a tener la base de datos, conforme al contenido que se va a almacenar.</p>
-<p><img alt="" src="/img/recursos/basedatos/basedatos04.png" /></p>
+<p><img alt="Editar Base de Datos" src="/img/recursos/basedatos/basedatos04.png" /></p>
 <ul>
 <li>
 <p><strong>Crear un nuevo campo</strong>:  en esta lista desplegable es posible escoger entre varios tipos de campos, los cuales, al ser seleccionados, debe asignarse un nombre de manera obligatoria y una descripción de manera opcional. A continuación, se da una descripción del funcionamiento de los tipos de campos[1]:</p>
@@ -1105,7 +1108,7 @@
 <p><strong>Botón de radio.</strong> Permite al usuario elegir entre un conjunto de opciones. Si no se selecciona nada se le mostrará un mensaje pidiéndole que lo haga y sólo se le permitirá añadir una entrada cuando lo haya hecho. En el formulario de configuración escribiremos en Opciones cada una de las opciones que se mostrarán utilizando una nueva línea para cada una de ellas.</p>
 </li>
 </ul>
-<p><img alt="" src="/img/recursos/basedatos/basedatos05.png" /></p>
+<p><img alt="Campo Boton de Radio" src="/img/recursos/basedatos/basedatos05.png" /></p>
 <p>[1] <a href="https://actividadesmoodle23.weebly.com/base-de-datos.html">Recursos Moodle - Base de datos</a></p>
 <ul>
 <li>
@@ -1115,7 +1118,7 @@
 <p><strong>Casilla de selección.</strong> Permite al usuario elegir entre un conjunto de opciones, pero a diferencia de los botones de radio se puede seleccionar más de una a la vez, o no seleccionar ninguna. Escribiremos en Opciones las elecciones que se mostrarán, una por línea.</p>
 </li>
 </ul>
-<p><img alt="" src="/img/recursos/basedatos/basedatos06.png" /></p>
+<p><img alt="Campo Texto" src="/img/recursos/basedatos/basedatos06.png" /></p>
 <ul>
 <li><strong>Fecha</strong>. Permite a los usuarios elegir una fecha seleccionandola de una lista desplegable con el día, mes y año.</li>
 <li><strong>Imagen.</strong> Es parecida a Archivo, pero se utiliza para subir imágenes. Cuando se muestre la entrada en la base de datos se mostrará incrustado el archivo de imagen subido, a diferencia del campo Archivo que se mostrará como un vínculo. Opcionalmente determinaremos el ancho y el alto cuando la entrada se muestre individualmente (vista simple) o cuando se muestre en la lista de entradas. En la vista de lista la imagen debería mostrarse en un tamaño reducido para no estropear el diseño. Es buena idea determinar ambos parámetros para que la base tenga un aspecto estético consistente.</li>
@@ -1127,12 +1130,12 @@
 <li><strong>Área de texto</strong>. Permite a los usuarios introducir un texto amplio y con formato (utilizando el editor HTML). Es posible determinar el tamaño del área de texto delimitando el ancho y el alto. Cuando se escriba más texto del que cabe en el área diseñada aparecerá automáticamente un scroll vertical.</li>
 </ul>
 <p>Conforme vamos añadiendo campos a la base los veremos listados bajo la pestaña campos. Desde aquí es posible eliminarlos y editarlos.</p>
-<p><img alt="" src="/img/recursos/basedatos/basedatos07.png" /></p>
+<p><img alt="Listado Campo" src="/img/recursos/basedatos/basedatos07.png" /></p>
 <p>Por defecto las entradas en la base de datos se muestran por el orden en que van siendo añadidas desde la más reciente a la más antigua. Podemos cambiar este comportamiento desde el menú desplegable Campo de ordenación por defecto. Por ejemplo, si hemos creado una base de datos de pintores famosos podríamos decidir que las entradas se ordenarán por el nombre del autor seleccionado.</p>
 <p>Creada la actividad del curso, esta se visualiza de la siguiente manera:</p>
 <p>Las opciones que se visualizan para el docente una vez se escoge la base de datos, se muestran a continuación: </p>
-<p><img alt="" src="/img/recursos/basedatos/basedatos08.png" /></p>
-<p><img alt="" src="/img/recursos/basedatos/basedatos09.png" /></p>
+<p><img alt="Vista Base de Datos" src="/img/recursos/basedatos/basedatos08.png" /></p>
+<p><img alt="Vista Base " src="/img/recursos/basedatos/basedatos09.png" /></p>
 <ul>
 <li><strong>Ver lista</strong>:  muestra cada participación con todos los ítems que han sido ingresados por los usuarios.</li>
 <li><strong>Ver uno por uno</strong>: muestra la misma información ordenada una por pantalla, con todos los ítems ingresados en la base de datos.</li>
@@ -1143,7 +1146,7 @@
 <li><strong>Ajustes previos:</strong>  ofrece la alternativa de importar o exportar una actividad de base de datos.</li>
 </ul>
 <p>Desde el rol de estudiante, las opciones de la base de datos son las siguientes:</p>
-<p><img alt="" src="/img/recursos/basedatos/basedatos10.png" /></p>
+<p><img alt="Base de datos escritores Colombianos" src="/img/recursos/basedatos/basedatos10.png" /></p>
 
 
 

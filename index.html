@@ -58,8 +58,11 @@
   
     
     
+    <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <label for="__search" class="visually-hidden">Buscar en el sitio</label>
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,13 +121,13 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
+    
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
@@ -215,7 +218,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#planestic" class="md-nav__link">
+  <a href="#planestic" class="md-nav__link" aria-label="Planes Tic">
     Planestic
   </a>
   
@@ -792,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="actividades/taller.md" class="md-nav__link">
+      <a href="actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -883,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="nosotros/planestic/" class="md-nav__link">
+      <a href="nosotros/planestic/" class="md-nav__link" aria-label="PlanesTic">
         Planestic
       </a>
     </li>
@@ -911,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="nosotros/ingenieria.md" class="md-nav__link">
+      <a href="nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -939,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="nosotros/aulasvirtuales/" class="md-nav__link">
+      <a href="nosotros/aulasvirtuales/" class="md-nav__link" aria-label="aulas Virtuales">
         Aulas Virtuales
       </a>
     </li>
@@ -1008,14 +1011,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#planestic" class="md-nav__link">
+  <a href="#planestic" class="md-nav__link" aria-label="Planes-Tic">
     Planestic
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#aulas-virtuales" class="md-nav__link">
+  <a href="#aulas-virtuales" class="md-nav__link" aria-label="Aulas Virtuales">
     Aulas virtuales
   </a>
   
@@ -1047,15 +1050,20 @@ Su función principal como docente de una asignatura alojada en aulas virtuales 
 <h2 id="planestic">Planestic</h2>
 <div>
 <p style = 'text-align:center;'>
-<iframe width="600" height = "420"
-src="https://www.youtube.com/embed/WSN2PjoK374">
+  <iframe 
+  width="600" 
+  height="420" 
+  src="https://www.youtube.com/embed/WSN2PjoK374"
+  title="Video de YouTube: Educación Virtal Logo"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
 </iframe>
 </div>
 </p>
 <h2 id="aulas-virtuales">Aulas virtuales</h2>
 <p>Para visitar los sitios de aulas virtuales dirijase a los siguientes enlaces:</p>
 <ul>
-<li><a href="https://aulasvirtuales.udistrital.edu.co">Aulas Virtuales</a></li>
+<li><a href="https://aulasvirtuales.udistrital.edu.co" aria-label="aulas-virtuales">Aulas Virtuales</a></li>
 </ul>
 
 

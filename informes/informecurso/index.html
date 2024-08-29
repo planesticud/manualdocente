@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -744,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -960,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1138,7 +1139,7 @@
 <h1 id="informes-de-curso">Informes de curso</h1>
 <h2 id="introduccion"><strong>Introducción</strong></h2>
 <p>En el módulo de informes del curso el docente encontrará Desglose de Competencias, Intuiciones, Registros, Registros Activos, Actividad del curso, Participación en el curso, Finalización de la actividad y estadísticas como se aprecia en la imagen x.</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso01.png" /></p>
+<p><img alt="Introducción" src="/img/informes/informecurso/informecurso01.png" /></p>
 <p><strong>Imagen X. Ítems del módulo de informes del curso.</strong></p>
 <h2 id="desglose-de-competencias"><strong>Desglose de Competencias</strong></h2>
 <p>Este tipo de reporte permite desglosar las competencias de los estudiantes en el curso con una valoración la cual es determinada por el docente.</p>
@@ -1146,49 +1147,49 @@
 <p>En este tipo de informe permite realizar analítica a partir de diferentes muestras recolectadas por la plataforma, como por ejemplo las inscripciones de estudiantes, esto con el fin de generar intuiciones a partir de modelos de predicción.</p>
 <h2 id="registros"><strong>Registros</strong></h2>
 <p>Desde el informe de registro, el docente podrá ver las interacciones del estudiante dentro del curso, el informe de registro puede ser filtrado por curso si el docente tiene más de un aula virtual en la plataforma Moodle, por participante si se requiere saber el comportamiento de un estudiante en específico dentro de un curso, también se puede realizar el filtro de informe de registro por día, si el docente requiere saber el comportamiento de los estudiantes en un día específico, si el docente requiere realizar un informe del comportamiento de los estudiantes en una actividad en específico puede filtrar por “Announcements”, y en caso de que se requiera saber qué acciones a realizado los estudiantes dentro del curso se puede filtrar desde la opción que aparece por defecto “Todas las acciones”, desde este filtro permite ver si se ha realizado las siguientes acciones (Crear, Vista, Actualizar, Borrar, Todos los cambios). En caso de que el docente requiere descargar la información de informe de registro lo podrá hacer a través de la opción “Descargar datos de tabla como”</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso02.png" /></p>
-<p><strong>Imagen X. Informe de Registro.</strong></p>
+<p><img alt="Informe de Registro." src="/img/informes/informecurso/informecurso02.png" /></p>
+<p><strong>Imagen 91. Informe de Registro.</strong></p>
 <h2 id="registros-activos"><strong>Registros Activos</strong></h2>
-<p>Este tipo de registro permite visualizar las actividades realizadas en las últimas horas en un curso, como se observa en la imagen X.</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso03.png" /></p>
-<p><strong>Imagen X. Ítem Informe de Registros Activos.</strong></p>
+<p>Este tipo de registro permite visualizar las actividades realizadas en las últimas horas en un curso, como se observa en la imagen 92.</p>
+<p><img alt="Registros Activos." src="/img/informes/informecurso/informecurso03.png" /></p>
+<p><strong>Imagen 92. Ítem Informe de Registros Activos.</strong></p>
 <h2 id="actividad-del-curso"><strong>Actividad del curso</strong></h2>
-<p>En este tipo de informe se muestran las visualizaciones que han tenido las actividades de un curso y el número de estudiantes que han visualizado una actividad y la fecha de último acceso como se observa en la imagen X.</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso04.png" /></p>
-<p><strong>Imagen X. Ítem Informe de Actividades del curso.</strong></p>
+<p>En este tipo de informe se muestran las visualizaciones que han tenido las actividades de un curso y el número de estudiantes que han visualizado una actividad y la fecha de último acceso como se observa en la imagen 93.</p>
+<p><img alt="Actividades del curso" src="/img/informes/informecurso/informecurso04.png" /></p>
+<p><strong>Imagen 93. Ítem Informe de Actividades del curso.</strong></p>
 <h2 id="participacion-en-el-curso"><strong>Participación en el curso</strong></h2>
 <p>En este tipo de informe le permite al docente saber si un estudiante ha participado en una actividad o si ha interactuado con ella, como se observa en la imagen X. En este <strong>tipo de</strong> informe se puede realizar filtrando por Módulo de Actividad, Periodo, acciones y roles de usuario en el curso, para información más detallada.</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso05.png" />
-<strong>Imagen X. Ítem Informe de Participación en el curso.</strong></p>
+<p><img alt="Participación en el curso" src="/img/informes/informecurso/informecurso05.png" />
+<strong>Imagen 94. Ítem Informe de Participación en el curso.</strong></p>
 <h2 id="finalizacion-de-la-actividad"><strong>Finalización de la actividad</strong></h2>
 <p>En este tipo de informe se muestra al docente el avance de los estudiantes en la realización de las actividades según los criterios propuestos para el cumplimiento total de esta, como se observa en la imagen X.En este tipo de informe se puede realizar un filtro por la letra inicial de los nombres y otro filtro por la letra inicial de los apellidos, o puede mostrarle al docente toda la información por medio del filtro de todos.</p>
 <p>el docente puede ver las actividades creadas para el curso y las cuales ha realizado cada uno de los estudiantes, cuando la actividad es realizada por el estudiante aparece seleccionada en el recuadro que corresponde.</p>
 <p>Adicional a esta información el docente puede realizar la descarga en formato csv o excel,  como se observa en la imagen X.</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso06.png" />
-<strong>Imagen X. Ítem Informe de Finalización de actividad.</strong></p>
+<p><img alt="Finalización de actividad" src="/img/informes/informecurso/informecurso06.png" />
+<strong>Imagen 95. Ítem Informe de Finalización de actividad.</strong></p>
 <h2 id="estadisticas"><strong>Estadísticas</strong></h2>
 <p>En este tipo de informe se muestra al docente una gráfica en la cual puede ver la cantidad de interacción que se ha realizado por parte de los estudiantes,docentes o invitados involucrados en desde los diferentes cursos asociados,como se observa en la imagen X.</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso07.png" /></p>
-<p><strong>Imagen X. Gráfica de Estadísticas.</strong></p>
+<p><img alt="Gráfica de Estadísticas." src="/img/informes/informecurso/informecurso07.png" /></p>
+<p><strong>Imagen 96. Gráfica de Estadísticas.</strong></p>
 <p>Se encuentra también en la parte inferior de la gráfica una tabla donde el docente puede ver la información registrada en la gráfica según los filtros seleccionados,como se observa en la imagen X.</p>
-<p><img alt="" src="/img/informes/informecurso/informecurso08.png" /></p>
-<p><strong>Imagen X. Informe de Estadística.</strong></p>
+<p><img alt="Informe de Estadística." src="/img/informes/informecurso/informecurso08.png" /></p>
+<p><strong>Imagen 97. Informe de Estadística.</strong></p>
 <p>El docente puede obtener las gráficas según sea su preferencia a través de los diferentes filtros posibles los cuales son:</p>
 <ul>
 <li><strong>Curso</strong>: hace referencia al curso sobre el cual se desea consultar,como se observa en la imagen X.</li>
 </ul>
-<p><img alt="" src="/img/informes/informecurso/informecurso09.png" /></p>
-<p><strong>Imagen X. Filtro por curso.</strong></p>
+<p><img alt="Filtro por curso." src="/img/informes/informecurso/informecurso09.png" /></p>
+<p><strong>Imagen 98. Filtro por curso.</strong></p>
 <ul>
 <li><strong>Tipo de informe</strong>:hace referencia a las actividades que se desean consultar,como se observa en la imagen X.</li>
 </ul>
-<p><img alt="" src="/img/informes/informecurso/informecurso10.png" /></p>
-<p><strong>Imagen X. Filtro por tipo de informe.</strong></p>
+<p><img alt="Filtro por tipo de informe." src="/img/informes/informecurso/informecurso10.png" /></p>
+<p><strong>Imagen 99. Filtro por tipo de informe.</strong></p>
 <ul>
 <li><strong>Periodo de tiempo: hace referencia a las actividades consultadas por el último tiempo seleccionado</strong>,como se observa en la imagen X.</li>
 </ul>
-<p><img alt="" src="/img/informes/informecurso/informecurso11.png" /></p>
-<p><strong>Imagen X. Filtro por periodo de tiempo.</strong></p>
+<p><img alt="Filtro por periodo de tiempo." src="/img/informes/informecurso/informecurso11.png" /></p>
+<p><strong>Imagen 100. Filtro por periodo de tiempo.</strong></p>
 
 
 

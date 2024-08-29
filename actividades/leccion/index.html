@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -794,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../taller.md" class="md-nav__link">
+      <a href="../taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -913,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1041,7 +1042,7 @@
 <p><strong>Actividades</strong></p>
 <h1 id="leccion">Leccion</h1>
 <h2 id="introduccion"><strong>Introducción</strong></h2>
-<p><img alt="" src="/img/actividades/leccion/leccion01.png" /></p>
+<p><img alt="Leccion" src="/img/actividades/leccion/leccion01.png" /></p>
 <p>Lección permite al docente crear contenido de forma lineal, en las cuales se incluyen actividades, esto para fomentar en el estudiante la comprensión de diferentes temas a través de diferentes tipos de preguntas como son:</p>
 <ul>
 <li>
@@ -1056,28 +1057,28 @@
 </ul>
 <p>Esto permite que cada uno de los contenidos se pueda manejar por páginas, por lo que el estudiante termina una página y continúa en la siguiente como una forma de llevar de forma lineal el aprendizaje del estudiante.</p>
 <h2 id="creacion-de-leccion"><strong>Creación de lección</strong></h2>
-<p>Para la creación de una lección se debe tener en cuenta los diferentes ítems que hacen parte de la configuración de una lección, como se observa en la imagen X.</p>
-<p><img alt="" src="/img/actividades/leccion/leccion02.png" /></p>
-<p><strong>Imagen X.</strong> Ítems Configuración Lección</p>
+<p>Para la creación de una lección se debe tener en cuenta los diferentes ítems que hacen parte de la configuración de una lección, como se observa en la imagen 72.</p>
+<p><img alt="creacion de leccion "src="/img/actividades/leccion/leccion02.png" /></p>
+<p><strong>Imagen 72.</strong> Ítems Configuración Lección</p>
 <p>En el ítem general se debe colocar el nombre de la lección y una breve descripción de la lección.</p>
-<p><img alt="" src="/img/actividades/leccion/leccion03.png" /></p>
-<p><strong>Imagen X.</strong> Ítems Configuración Lección, General</p>
+<p><img alt="configurar leccion" src="/img/actividades/leccion/leccion03.png" /></p>
+<p><strong>Imagen 73.</strong> Ítems Configuración Lección, General</p>
 <p>En el ítem apariencia, el docente puede elegir si el progreso de la lección es visible con barra de progreso y si se desea mostrar un menú como se observa en la imagen x.</p>
-<p><img alt="" src="/img/actividades/leccion/leccion04.png" /></p>
-<p><strong>Imagen X.</strong> Ítems Configuración Lección, Apariencia</p>
+<p><img alt="configurar apariencia" src="/img/actividades/leccion/leccion04.png" /></p>
+<p><strong>Imagen 74.</strong> Ítems Configuración Lección, Apariencia</p>
 <p>En el ítem de Disponibilidad el docente puede establecer las fechas para la publicación de la lección y finalización de la lección con tiempo límite para resolver la lección.</p>
-<p><img alt="" src="/img/actividades/leccion/leccion05.png" /></p>
-<p><strong>Imagen X.</strong> Ítems Configuración Lección, Disponibilidad</p>
+<p><img alt="Configurar lección, disponibilidad" src="/img/actividades/leccion/leccion05.png" /></p>
+<p><strong>Imagen 75.</strong> Ítems Configuración Lección, Disponibilidad</p>
 <p>En el ítem de Control de flujo el docente puede configurar las acciones permitidas en la lección, como por ejemplo el máximo de intentos permitidos, las acciones que el estudiante puede realizar posterior a la respuesta correcta o el número de páginas a mostrar.</p>
-<p><img alt="" src="/img/actividades/leccion/leccion06.png" /></p>
-<p><strong>Imagen X</strong>. Ítems Configuración Lección, Control de Flujo</p>
+<p><img alt="control de flujo" src="/img/actividades/leccion/leccion06.png" /></p>
+<p><strong>Imagen 76</strong>. Ítems Configuración Lección, Control de Flujo</p>
 <p>En el Ítem de calificación el docente podrá configurar el tipo de calificación, la categoría y la calificación que se requiere sacar en la lección para poder aprobar.</p>
-<p><img alt="" src="/img/actividades/leccion/leccion07.png" /></p>
-<p><strong>Imagen X.</strong> Ítems Configuración Lección, Calificación</p>
+<p><img alt="Calificación" src="/img/actividades/leccion/leccion07.png" /></p>
+<p><strong>Imagen 77.</strong> Ítems Configuración Lección, Calificación</p>
 <p>Al finalizar las configuraciones de la lección este le mostrará la siguiente información, en el cual pregunta ¿Qué desea hacer primero?</p>
-<p><img alt="" src="/img/actividades/leccion/leccion08.png" /></p>
-<p><strong>Imagen X.</strong> Ventana de la lección</p>
-<p>En la ventana que se observa en la imagen X podrá agregar contenido a la lección, agregar preguntas, generar informes y pre visualizar  la lección para que el docente pueda verificar como está quedando la lección.</p>
+<p><img alt="ventana de la lección" src="/img/actividades/leccion/leccion08.png" /></p>
+<p><strong>Imagen 78.</strong> Ventana de la lección</p>
+<p>En la ventana que se observa en la imagen 78 podrá agregar contenido a la lección, agregar preguntas, generar informes y pre visualizar  la lección para que el docente pueda verificar como está quedando la lección.</p>
 
 
 

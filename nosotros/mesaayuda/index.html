@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -236,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../soporte/mesaayuda/" class="md-nav__link">
+      <a href="../../soporte/mesaayuda/" class="md-nav__link" aria-label="Mesa de ayuda">
         Mesa de Ayuda
       </a>
     </li>
@@ -744,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -864,11 +865,7 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../ingenieria.md" class="md-nav__link">
-        Ingenieria
-      </a>
-    </li>
+    
   
 
             
@@ -893,7 +890,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active" aria-label="Mesa de Ayuda1 ">
         Mesa de ayuda
       </a>
       
@@ -913,7 +910,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mesa-de-ayuda" class="md-nav__link">
+  <a href="#mesa-de-ayuda" class="md-nav__link" aria-label="mesa de ayuda">
     Mesa de Ayuda
   </a>
   
@@ -1003,7 +1000,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mesa-de-ayuda" class="md-nav__link">
+  <a href="#mesa-de-ayuda" class="md-nav__link" aria-label="Mesa de ayuda2">
     Mesa de Ayuda
   </a>
   
@@ -1027,8 +1024,8 @@
 <p><strong>Nosotros</strong></p>
 <h1 id="sobre-nosotros">Sobre Nosotros</h1>
 <h2 id="mesa-de-ayuda"><strong>Mesa de Ayuda</strong></h2>
-<p><img alt="" src="/img/nosotros/mesaayuda.PNG" /></p>
-<p>La <a href="https://mesadeayuda.planestic.udistrital.edu.co">Mesa de Ayuda</a> es una herramienta fundamental para el servicio de soporte para los programas en modalidad virtual ofrecidos por la UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS, dirigido a la comunidad interesada; de igual forma este corresponde a uno de los requerimientos legales que deben formar parte de la prestación del servicio. Con este propósito se solicita diligenciar y remitir está información según las orientaciones presentadas.</p>
+<p><img alt="Mesa de ayuda" src="/img/nosotros/mesaayuda.PNG" /></p>
+<p>La <a href="https://mesadeayuda.planestic.udistrital.edu.co" aria-label="mda">Mesa de Ayuda</a> es una herramienta fundamental para el servicio de soporte para los programas en modalidad virtual ofrecidos por la UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS, dirigido a la comunidad interesada; de igual forma este corresponde a uno de los requerimientos legales que deben formar parte de la prestación del servicio. Con este propósito se solicita diligenciar y remitir está información según las orientaciones presentadas.</p>
 <p>Con el fin de agilizar las solicitudes de apoyo y prestar un mejor servicio, se utiliza un sistema de ticket de soporte. Cada solicitud de ayuda se le asigna un número de ticket único que se puede utilizar para rastrear el progreso y respuestas en línea. Para su información le proporcionamos archivos completos y la historia de todas sus solicitudes de soporte. Se requiere una dirección válida de correo electrónico para enviar un ticket.</p>
 <p>Igualmente se garantiza que el uso de esta información es confidencial y de uso exclusivo para el servicio solicitado, dando cumplimiento a lo dispuesto en la Ley 1581 de 2012, "Por el cual se dictan disposiciones generales para la protección de datos personales".</p>
 <p>"Teniendo en cuenta lo anterior, autorizo de manera voluntaria, previa, explicita, informada e inequívoca a la UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS para tratar mis datos ingresados para los fines relacionados con el objeto aquí informado y en especial para los fines legales, contractuales, misionales descritos en la Política de Tratamiento de Datos Personales la UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS. Así mismo manifiesto que la información obtenida la he suministrado de forma voluntaria y es verídica, lo cual queda de manifiesto al oprimir el botón de "Abrir un Nuevo Ticket".</p>

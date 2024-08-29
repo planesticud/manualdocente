@@ -58,8 +58,11 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -111,20 +114,20 @@
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
+   <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
+
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
@@ -877,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -996,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1210,10 +1213,10 @@
 <p>Big Blue Button BN le permite crear dentro de Moodle enlaces hacia aulas en línea en tiempo real con salas que emplean BigBlueButton, un sistema de código abierto para conferencias web para la educación a distancia.</p>
 <p>Usando BigBlueButtonBN puede especificar el título, descripción, fecha del calendario (que le proporciona un rango de fechas para unirse a la sesión), grupos, y detalles acerca de la grabación de la sesión en línea. Para ver grabaciones posteriormente, añada un recurso RecordingsBN a este curso.</p>
 <p>Para iniciar una sala de conferencia con BigBlueButtonBN debe ubicar en el aula el lugar en donde desea que esté ubicada esta actividad. Una vez seleccionado el espacio debe activar la edición, dando clic en el botón que ejecuta esta orden, este botón está ubicado en la esquina superior derecha.</p>
-<p><img alt="" src="/img/recursos/bbb/bbb01.png" /></p>
+<p><img alt="Iniciar sala" src="/img/recursos/bbb/bbb01.png" /></p>
 <p>Luego debe ir a la parte final del contenido de la página y dar clic en la opción Añadir una actividad o un recurso. A continuación, se abrirá el menú de opciones de actividades y recurso de Moodle, allí debe dar clic en la actividad BigBlueButtonBN que tiene un icono azul con un “b” en el centro de color blanco. En ese momento se habilitará la opción de agregar, de clic en este botón. </p>
-<p><img alt="" src="/img/recursos/bbb/bbb02.png" /></p>
-<p><img alt="" src="/img/recursos/bbb/bbb03.png" /></p>
+<p><img alt="agregar sala" src="/img/recursos/bbb/bbb02.png" /></p>
+<p><img alt="abrir actividad" src="/img/recursos/bbb/bbb03.png" /></p>
 <p>A continuación, se abrirá la página de la actividad BigBlueButtonBN en donde podrá configurarla, aquí podrá especificar el título, descripción, fecha del calendario (que le proporciona un rango de fechas para unirse a la sesión), grupos, y detalles acerca de la grabación de la sesión en línea.  Para ver grabaciones posteriormente añada el recurso RecordingsBN a este curso. Los tipos de instancia que se manejan desde BigBlueButtonBN son: <em>sala/actividad con grabaciones – solo salas/actividad – solo grabaciones</em>.</p>
 <p>Las siguientes son las opciones de configuración general de la actividad:</p>
 <h3 id="ajustes-generales"><strong>Ajustes generales:</strong></h3>
@@ -1226,7 +1229,7 @@
 <h3 id="ajustes-de-bloqueo"><strong>Ajustes de bloqueo:</strong></h3>
 <p>Desde esta opción podrá habilitar: Desactivar las cámaras web, Desactivar los micrófonos, Desactivar el chat privado, Desactivar el chat público, Desactivar las notas compartidas, Ocultar la lista de usuarios, Bloquear el diseño de la sala, Ignorar los ajustes de bloqueo, Permitir ignorar los ajustes de bloqueo. Para ello debe dar clic en la casilla correspondiente, de este modo quedará habilitado o si por el contrario no lo desea habilitar, esta opción debe quedar en la casilla correspondiente vacía.  </p>
 <h3 id="presentacion-de-contenido"><strong>Presentación de contenido:</strong></h3>
-<p>Acá cuenta con el cuadro de edición que permite seleccionar archivos, que serían utilizados en la conferencia. Para ello puede dar clic en el primer botón de agregar   o Puede arrastrar y soltar archivos para añadirlos. <img alt="" src="/img/recursos/bbb/bbb04.png" /></p>
+<p>Acá cuenta con el cuadro de edición que permite seleccionar archivos, que serían utilizados en la conferencia. Para ello puede dar clic en el primer botón de agregar   o Puede arrastrar y soltar archivos para añadirlos. <img alt="Actualizar tema" src="/img/recursos/bbb/bbb04.png" /></p>
 <h3 id="rol-asignado-durante-la-sesion-en-vivo"><strong>Rol asignado durante la sesión en vivo:</strong></h3>
 <p>En esta opción podrá agregar participantes, uno a uno o todos los usuarios inscritos, ya sea por rol definido (profesor, profesor sin permiso de edición, estudiante, invitado) o usuario, si lo selecciona aparecerá el listado de participantes para que sean añadidos manualmente. También encontrará la lista de participantes que han sido agregados y la posibilidad de definir con qué perfil entra a la sesión, ya sea como observador o moderador.</p>
 <h3 id="programacion-de-sesiones"><strong>Programación de sesiones:</strong></h3>
@@ -1282,7 +1285,7 @@
 <p>Cancelar. Esto borrará todos los cambios realizados y regresará al curso.</p>
 </li>
 </ul>
-<p><img alt="" src="/img/recursos/bbb/bbb05.png" /></p>
+<p><img alt="Agregar tema" src="/img/recursos/bbb/bbb05.png" /></p>
 
 
 

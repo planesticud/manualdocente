@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -787,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../taller.md" class="md-nav__link">
+      <a href="../taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -906,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1035,64 +1036,64 @@
 <li>Como herramienta de evaluación</li>
 </ul>
 <p>Para cargar un paquete SCORM se debe seguir la siguiente ruta: Activar la edición del curso en el botón “<strong>Activar edición</strong>” luego, ir al Tema, Unidad, pestaña donde se debe reflejar el módulo y dar clic en “<strong>Añadir una actividad o recurso</strong>” buscar en el menú de “<strong>Actividades</strong>” el nombre de “<strong>Paquete SCORM</strong>”</p>
-<p><img alt="" src="/img/actividades/scorm/scorm01.png" /></p>
-<p><strong>Imagen X. Activar edición del curso.</strong></p>
-<p><img alt="" src="/img/actividades/scorm/scorm02.png" /></p>
-<p><strong>Imagen X. Añadir una actividad o recurso.</strong></p>
-<p><img alt="" src="/img/actividades/scorm/scorm03.png" /></p>
-<p><strong>Imagen X. Elección de actividad Paquete SCORM.</strong></p>
+<p><img alt="Paquete SCORM" src="/img/actividades/scorm/scorm01.png" /></p>
+<p><strong>Imagen 79. Activar edición del curso.</strong></p>
+<p><img alt="edicion curso" src="/img/actividades/scorm/scorm02.png" /></p>
+<p><strong>Imagen 80. Añadir una actividad o recurso.</strong></p>
+<p><img alt="añadir actividad y recursos" src="/img/actividades/scorm/scorm03.png" /></p>
+<p><strong>Imagen 81. Elección de actividad Paquete SCORM.</strong></p>
 <p>Al crear la actividad nos redirecciona al menú de configuración de este, donde debemos agregar el nombre, apariencia, parámetros, entre otros ajustes. Se indicará uno a uno los apartados a configurar.</p>
 <ul>
 <li><strong>General:</strong> En los ajustes generales, nos solicita un nombre (que es obligatorio para la creación de cualquier recurso o actividad), una descripción, si así se requiere.</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm04.png" /></p>
-<p><strong>Imagen X. Configuración apartado General en actividad Paquete SCORM.</strong></p>
+<p><img alt="configurar actividad scorm" src="/img/actividades/scorm/scorm04.png" /></p>
+<p><strong>Imagen 82. Configuración apartado General en actividad Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Paquete:</strong> Aquí es donde cargaremos el paquete SCORM que queremos usar para el curso. Este paquete debe ser ZIP.</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm05.png" /></p>
-<p><strong>Imagen X. Cargue de paquete SCORM.</strong></p>
+<p><img alt="Cargue de paquete SCORM" src="/img/actividades/scorm/scorm05.png" /></p>
+<p><strong>Imagen 83. Cargue de paquete SCORM.</strong></p>
 <ul>
 <li><strong>Apariencia:</strong> Aquí se configura la forma de mostrar el paquete en el curso, puede ser por una ventana emergente o en la misma página del curso, así como mostrar la navegación y estado de intentos, entre otros apartados.</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm06.png" /></p>
-<p><strong>Imagen X. Configuración de apariencia en Paquete SCORM.</strong></p>
+<p><img alt="Configuracion Paquete scorm" src="/img/actividades/scorm/scorm06.png" /></p>
+<p><strong>Imagen 84. Configuración de apariencia en Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Disponibilidad:</strong> Aquí se configura la disponibilidad en tiempo que tendrá la actividad, configurando la fecha desde que se encuentra disponible hasta la fecha final.</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm07.png" /></p>
-<p><strong>Imagen X. Configuración de disponibilidad en Paquete SCORM.</strong></p>
+<p><img alt="Configuracion de disponibilidad paquete SCORM" src="/img/actividades/scorm/scorm07.png" /></p>
+<p><strong>Imagen 85. Configuración de disponibilidad en Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Calificación:</strong> Para configurar la calificación, se debe elegir el método de calificación, entre las opciones se encuentran: calificación más alta, promedio, sumadas o del objeto de aprendizaje; y su calificación máxima.</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm08.png" /></p>
-<p><strong>Imagen X. Configuración de calificación de Paquete SCORM.</strong></p>
+<p><img alt="calificación de Paquete SCORM" src="/img/actividades/scorm/scorm08.png" /></p>
+<p><strong>Imagen 86. Configuración de calificación de Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Gestión de intentos:</strong> Se puede configurar lo referente a los intentos, como el número de intentos, la calificación de estos, si se debe forzar uno nuevo o incluso bloquear después del último intento..</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm09.png" /></p>
-<p><strong>Imagen X. Configuración apartado Gestión de intentos en Paquete SCORM.</strong></p>
+<p><img alt="Gestion de intentos" src="/img/actividades/scorm/scorm09.png" /></p>
+<p><strong>Imagen 87. Configuración apartado Gestión de intentos en Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Configuración de compatibilidad:</strong> Aquí se configura el forzar la finalización de la actividad, así como la continuación automática de donde queda en la última visualización y un autoguardado..</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm10.png" /></p>
-<p><strong>Imagen X. Configuración apartado Gestión de intentos en Paquete SCORM.</strong></p>
+<p><img alt="intentos Gestion paquete SCORM" src="/img/actividades/scorm/scorm10.png" /></p>
+<p><strong>Imagen 88. Configuración apartado Gestión de intentos en Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Ajustes comunes del módulo:</strong> Aquí podremos elegir si se le mostrará el paquete SCORM en el curso a los estudiantes o está se ocultará y será visible solo para los profesores, de manera predeterminada en su rol. Además de agregar un número ID para dar una identificación para fines de informes personalizados. Este espacio se puede dejar en blanco, como viene de forma predeterminada. Adicional, se puede asignar el modo de grupo y agrupamiento, así como añadir una nueva restricción.</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm11.png" /></p>
-<p><strong>Imagen X. Configuración de ajustes comunes del módulo en Paquete SCORM.</strong></p>
+<p><img alt="Paquete scorm " src="/img/actividades/scorm/scorm11.png" /></p>
+<p><strong>Imagen 89. Configuración de ajustes comunes del módulo en Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Restricción de acceso:</strong> Aquí podremos restringir el acceso según la configuración que asignemos, esta puede ser por finalización de una actividad en específico, fecha determinada, calificación de una actividad en específico, perfil de usuario, incluso un conjunto de restricciones .</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm12.png" /></p>
-<p><img alt="" src="/img/actividades/scorm/scorm13.png" /></p>
-<p><strong>Imagen X. Configuración apartado Restricción de acceso en Paquete SCORM.</strong></p>
+<p><img alt="Paquete scorm12" src="/img/actividades/scorm/scorm12.png" /></p>
+<p><img alt="Paquete scorm13" src="/img/actividades/scorm/scorm13.png" /></p>
+<p><strong>Imagen 90. Configuración apartado Restricción de acceso en Paquete SCORM.</strong></p>
 <ul>
 <li><strong>Finalización de actividad:</strong> En este ítem se puede configurar como el estudiante marcará o obtendrá la finalización de la actividad si esta se requiere, además de una fecha de espera de finalización del recurso carpeta (más una fecha de revisión que finalización).</li>
 </ul>
-<p><img alt="" src="/img/actividades/scorm/scorm14.png" /></p>
-<p><strong>Imagen X. Configuración apartado Finalización de actividad en Paquete SCORM.</strong></p>
+<p><img alt="Finalizar paquete" src="/img/actividades/scorm/scorm14.png" /></p>
+<p><strong>Imagen 91. Configuración apartado Finalización de actividad en Paquete SCORM.</strong></p>
 
 
 
@@ -1129,13 +1130,13 @@
       
       
         
-        <a href="../tarea/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Tarea" rel="next">
+        <a href="../taller/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Tarea" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Tarea
+              Taller
             </div>
           </div>
           <div class="md-footer__button md-icon">

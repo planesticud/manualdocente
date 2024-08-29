@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -828,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../taller.md" class="md-nav__link">
+      <a href="../taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -947,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1113,57 +1114,57 @@
 <ol>
 <li>
 <p>Desde la página principal del curso,hacer clic en “Activar edición”.</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario01.png" /></p>
+<p><img alt="Activar edición" src="/img/actividades/cuestionario/cuestionario01.png" /></p>
 </li>
 <li>
 <p>Ubicar la sección o tema, hacer clic en “Añadir una actividad o un recurso” seleccionar “Cuestionario” y luego hacer clic en “Agregar”.</p>
 </li>
 <li>
 <p>En el formulario, diligenciar los datos básicos del cuestionario:</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario02.png" /></p>
+<p><img alt="Seleccionar cuestionario" src="/img/actividades/cuestionario/cuestionario02.png" /></p>
 </li>
 </ol>
 <p><strong>Nombre</strong>: nombre de la actividad en este caso el cuestionario. <strong>Descripción del cuestionario</strong>: espacio habilitado para escribir la temática,  qué conocimientos mide, cuál es el objetivo o cuales son las condiciones mínimas del mismo.</p>
 <p>Para que los usuarios visualicen la descripción de la actividad, se debe habilitar la casilla de verificación:  “<strong>Muestra la descripción en la página del curso</strong>”. Se recomienda <strong>no mostrar</strong> dicha descripción, por motivos estéticos y de lineamientos de diseño internos.</p>
 <h2 id="configuracion-del-cuestionario"><strong>Configuración del cuestionario</strong></h2>
 <p>En las siguientes secciones, podrá realizar la configuración del cuestionario:</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario03.png" /></p>
+<p><img alt="Configuración de cuestionario" src="/img/actividades/cuestionario/cuestionario03.png" /></p>
 <ul>
 <li>
 <p><strong>Temporalización</strong>: en esta sección se ajustan las fechas en que se abrirá el cuestionario y se cerrará, es decir, los tiempos que tendrán los estudiantes para realizar dicha actividad.</p>
 <p>Para seleccionar las fechas se debe tildar la casilla de <strong>habilitar</strong>, solo así se puede configurar la fecha y hora. De igual forma, es posible configurar el límite de tiempo que tendrán los estudiantes para hacer el cuestionario.</p>
 <p>La lista de selección “<em>Cuando el tiempo ha terminado”</em>, permite escoger la acción más pertinente, en caso de que el tiempo se agote y el estudiante no haya terminado de resolver el cuestionario.</p>
 <p>En el siguiente ítem, se puede configurar este período de gracia para el envío.</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario04.png" /></p>
+<p><img alt="Temporalización" src="/img/actividades/cuestionario/cuestionario04.png" /></p>
 </li>
 <li>
 <p><strong>Esquema:</strong> En esta sección se configura la cantidad de preguntas que se visualizarán por página y la forma de navegación durante la presentación de la prueba, la cual se sugiere, se realice de manera secuencial.</p>
-<p><a href="/img/actividades/cuestionario/cuestionario05.png"></a></p>
+<p><img alt="Esquema" src="/img/actividades/cuestionario/cuestionario05.png"></img></p>
 </li>
 <li>
 <p><strong>Calificación:</strong> En esta sección se establece la categoría a la que corresponde el cuestionario dentro del libro de calificaciones, la calificación para aprobar la cual es de 30 en la Universidad y el número de intentos permitidos para presentar el cuestionario, valor que se si se establece en 1, evitaría que el estudiante presente más de una vez el cuestionario.</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario06.png" /></p>
+<p><img alt="Calificación" src="/img/actividades/cuestionario/cuestionario06.png" /></p>
 </li>
 <li>
 <p><strong>Comportamiento de las preguntas</strong>: en esta sección se elige si el orden de las respuestas es al azar.  Se recomienda seleccionar “Sí”. Igualmente, Moodle permite elegir el comportamiento de las preguntas, aquí se sugiere seleccionar la opción “Retroalimentación diferida”. De esta manera los estudiantes tendrán que responder todas las preguntas y enviar el cuestionario antes de recibir feedback.</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario07.png" /></p>
+<p><img alt="Comportamiento de las preguntas" src="/img/actividades/cuestionario/cuestionario07.png" /></p>
 <p>Las “<strong>Opciones de revisión</strong>” se dividen en bloques: el primero hace referencia a las opciones “<strong>Durante el intento</strong>”; el segundo “<strong>Inmediatamente después de cada intento</strong>”; el tercero “<strong>Más tarde, mientras el cuestionario aún está abierto</strong>”; y el cuarto bloque es “<strong>Después de cerrar el cuestionario</strong>”.</p>
 <p>En esta sección se configuran las opciones que el docente desea que el estudiante visualice durante o después de resolver el cuestionario, como son: las respuestas correctas, la retroalimentación global o específica, la puntuación, etc,.</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario08.png" /></p>
+<p><img alt="Opciones de revisión" src="/img/actividades/cuestionario/cuestionario08.png" /></p>
 </li>
 <li>
 <p><strong>Apariencia:</strong> brinda la posibilidad de mostrar o no la imagen del usuario que realiza el cuestionario. Aquí también se configuran los decimales en las calificaciones, que se recomienda poner en cero.</p>
 <p>Los ajustes de las “Restricciones extras sobre los intentos”, “Retroalimentación global”, “Ajustes comunes del módulo” y “Restricciones de acceso”,  son opciones avanzadas que se aplican en cursos cuyos estudiantes han sido organizados en grupos.</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario09.png" /></p>
+<p><img alt="Apariencia" src="/img/actividades/cuestionario/cuestionario09.png" /></p>
 <p>Luego de haber realizado todos los ajustes y configuraciones del cuestionario, hacer clic en "Guardar cambios y mostrar”, acción que llevará a la configuración y creación de las preguntas.</p>
 </li>
 </ul>
 <p><code></code><em>SE PUEDEN EXPLICAR LOS ITEMS DEL MENU DE LA IZQUIERDA, COMO PARA EDITARLO O PARA AÑADIR EXCEPCIONES</em></p>
 <h2 id="agregar-preguntas-a-un-cuestionario"><strong>Agregar preguntas a un cuestionario</strong></h2>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario10.png" /></p>
+<p><img alt="Agregar preguntas a un cuestionario" src="/img/actividades/cuestionario/cuestionario10.png" /></p>
 <p>Luego de crear y configurar el cuestionario, se crean y configuran las preguntas, para ello hacer clic en “Editar cuestionario”.</p>
 <p>En la siguiente pantalla, hacemos clic en “Agregar”, en el extremo inferior derecho de la pantalla, se desplegará un menú con tres opciones para agregar preguntas:</p>
-<p><img alt="" src="/img/actividades/cuestionario/cuestionario11.png" /></p>
+<p><img alt="Editar cuestionario" src="/img/actividades/cuestionario/cuestionario11.png" /></p>
 <h3 id="una-nueva-pregunta"><strong>Una nueva pregunta</strong></h3>
 <p>Permite agregar preguntas una por una, directamente al cuestionario que estamos creando.</p>
 <p>Si hacemos clic en “<em>una nueva pregunta</em>”, se despliega un menú en el que podemos elegir entre varias opciones de preguntas.</p>
@@ -1172,7 +1173,7 @@
 <p>Esta es la opción más recomendable, ya que permite agregar las preguntas desde una lista creada previamente. Al crear un banco de preguntas, se podrán cargar y clasificar preguntas en categorías que luego pueden ser usadas en varios cuestionarios.</p>
 <h3 id="una-pregunta-aleatoria"><strong>Una pregunta aleatoria</strong></h3>
 <p>Si ya se tiene un banco de preguntas creado, se pueden agregar una o varias preguntas aleatorias desde cualquier categoría del banco.</p>
-<p>Al hacer clic en “Una pregunta aleatoria” aparecerá una ventana en la que se puede elegir: la categoría a la que pertenece la(s) preguntas(s) a añadir, también preguntas de subcategorías y el número de preguntas aleatorias que requiera añadir al cuestionario.<img alt="" src="/img/actividades/cuestionario/cuestionario12.png" /></p>
+<p>Al hacer clic en “Una pregunta aleatoria” aparecerá una ventana en la que se puede elegir: la categoría a la que pertenece la(s) preguntas(s) a añadir, también preguntas de subcategorías y el número de preguntas aleatorias que requiera añadir al cuestionario.<img alt="Una pregunta aleatoria" src="/img/actividades/cuestionario/cuestionario12.png" /></p>
 <p>Para terminar, hacer clic en “Agregar pregunta aleatoria”. Se puede repetir el proceso si se quieren añadir preguntas de otra categoría.</p>
 <p><em>Cómo crear un cuestionario en Moodle - Centro de e-Learning UTN BA</em>. (2020). Centrodeelearning.com. https://consultas.centrodeelearning.com/kb/article/71-como-crear-un-cuestionario-en-moodle/</p>
 

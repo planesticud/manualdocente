@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -794,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -913,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1042,11 +1043,11 @@
 <h1 id="archivo">Archivo</h1>
 <h2 id="introduccion"><strong>Introducción</strong></h2>
 <p>Los archivos no son solo materiales como documentos procesados ​​de texto o presentaciones de diapositivas. Todos los tipos de archivos se pueden cargar y acceder a través de Moodle, pero el estudiante debe tener el software correcto para poder abrirlos. Los diferentes tipos de archivos se muestran con diferentes iconos. Los archivos se pueden agregar de dos maneras: se pueden arrastrar y soltar directamente en la página del curso:</p>
-<p><img alt="" src="/img/recursos/archivo/archivo01.png" /></p>
+<p><img alt="Añadir Actividad" src="/img/recursos/archivo/archivo01.png" /></p>
 <p>Alternativamente, se pueden agregar haciendo clic en Archivo en el selector de actividades.</p>
 <h2 id="subir-archivos"><strong>Subir archivos</strong></h2>
-<p><img alt="" src="/img/recursos/archivo/archivo02.png" /></p>
-<p><img alt="" src="/img/recursos/archivo/archivo03.png" /></p>
+<p><img alt="Subir Archivo" src="/img/recursos/archivo/archivo02.png" /></p>
+<p><img alt="Subir archivo " src="/img/recursos/archivo/archivo03.png" /></p>
 <p>El módulo Archivo permite a los profesores proveer un Archivo como un recurso del curso. Cuando sea posible, el archivo se mostrará dentro del interfaz del curso; si no es el caso, se les preguntará a los estudiantes si quieren descargarlo. </p>
 <p>Para agregar este recurso debe iniciar la edición y en el respectivo bloque seleccionar <strong>“Añadir una actividad o un recurso”</strong></p>
 <p>En la sección de recursos encontrará en <strong>“Recursos</strong>” la opción <strong>Archivo.</strong>  </p>
@@ -1057,18 +1058,18 @@
 <li>Incluir una mini-web como recurso del curso</li>
 <li>Proveer a los estudiantes de borradores de archivos para que los editen y los envíen en sus tareas</li>
 </ul>
-<p><img alt="" src="/img/recursos/archivo/archivo04.png" /></p>
+<p><img alt="Añadir Recursos" src="/img/recursos/archivo/archivo04.png" /></p>
 <p>Acorde la dinámica de Moodle se presenta un formulario guiado para la disposición de archivos como recurso.</p>
 <p>Observe que presenta datos obligatorios marcados con un asterisco en cada parámetro.</p>
 <p>Para el caso de archivo el dato obligatorio es el <strong>“Nombre”</strong> de archivo</p>
 <p>Sube tu archivo haciendo clic en el botón <strong>'Agregar'</strong> en el cuadro Seleccionar archivos. Hacer clic en este botón lo lleva al selector de archivos, que es el nombre que se le da al área de acceso y almacenamiento de archivos dentro de Moodle.</p>
-<p><img alt="" src="/img/recursos/archivo/archivo05.png" /></p>
+<p><img alt="Subir archivo Prueba" src="/img/recursos/archivo/archivo05.png" /></p>
 <p>Si ve un cuadro con una flecha, puede arrastrar y soltar un archivo directamente desde su escritorio a Moodle.</p>
 <p>Luego de ello seleccione el archivo o desarrolle la actividad “drag and drop”-Arrastrar y soltar archivos sobre el panel “<strong>Seleccionar archivos”</strong></p>
-<p><img alt="" src="/img/recursos/archivo/archivo06.png" /></p>
+<p><img alt="“drag and drop" src="/img/recursos/archivo/archivo06.png" /></p>
 <p><strong>Nota: Observe que los estudiantes necesitan tener el software apropiado en sus ordenadores personales para poder abrir los archivos.</strong></p>
 <p>para este fin se recomienda para documentos informativos, disponerlos a los usuarios en formato *.PDF; con este tipo de archivos se permite una forma de visualización por parte de los estudiantes en el módulo siguiente “<strong>Apariencia”</strong>, se recomienda la opción de “<strong>En ventana Emergente”,</strong> de esta manera el navegador del usuario final resolverá la apertura del documento PDF.</p>
-<p><img alt="" src="/img/recursos/archivo/archivo08.png" /><img alt="" src="/img/recursos/archivo/archivo07.png" /></p>
+<p><img alt="Abrir documento" src="/img/recursos/archivo/archivo08.png" /><img alt="Abrir Documento " src="/img/recursos/archivo/archivo07.png" /></p>
 <p>Note que dependiendo de la intención del docente con el recurso de archivo dispuesto se puede forzar descarga para que el estudiante tenga este recurso en su librería personal.</p>
 <p>En términos completos el panel <strong>“Mostrar”</strong> permite lo siguiente:</p>
 <ul>
@@ -1083,11 +1084,11 @@
 <li><strong>En marco:</strong> muestra el encabezado de Moodle y la descripción del archivo, con el archivo mostrado en un área redimensionable debajo.</li>
 <li><strong>Nueva ventana:</strong> muy parecida a 'en ventana emergente', pero la nueva ventana es una ventana de navegador completa, con menús y barra de direcciones, etc.</li>
 </ul>
-<p><img alt="" src="/img/recursos/archivo/archivo09.png" /><img alt="" src="/img/recursos/archivo/archivo10.png" /></p>
+<p><img alt="Restricciones de Acceso" src="/img/recursos/archivo/archivo09.png" /><img alt="Restricciones de Acceso " src="/img/recursos/archivo/archivo10.png" /></p>
 <p>Persisten otras configuraciones del recurso <strong>“Archivo”,</strong> que le permite al docente control sobre el acceso.</p>
 <p>En <strong>“Ajustes comunes del módulo”</strong> permite la visualización o no del recurso a los estudiantes</p>
 <p>En <strong>"Restricciones de acceso”</strong>, permite al docente añadir restricciones.</p>
-<p><img alt="" src="/img/recursos/archivo/archivo11.png" /></p>
+<p><img alt="Ajustes comunes del módulo" src="/img/recursos/archivo/archivo11.png" /></p>
 <p>La restricción puede estar basada en Finalización de actividad, fecha, calificación, el grupo o el agrupamiento en el cual están los estudiantes o inclusive en algún campo del perfil del usuario. El botón para 'Conjunto de restricciones' también permite criterios más complejos que necesita en condiciones anidadas.</p>
 <p>Se puede profundizar este tema de configuración de restricciones según el propósito del docente en <a href="https://docs.moodle.org/all/es/Usando_restringir_acceso">https://docs.moodle.org/all/es/Usando_restringir_acceso</a> </p>
 <p>En el panel <strong>“Finalización de actividad”</strong> permite al profesor establecer criterios de finalización en el entorno de una actividad específica. El criterio puede ser ver, recibir una determinada puntuación o que un alumno lo marque como completo.</p>

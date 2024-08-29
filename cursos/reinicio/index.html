@@ -58,8 +58,11 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -111,19 +114,18 @@
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
+   <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -300,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../grupos/" class="md-nav__link">
+      <a href="../grupos/" class="md-nav__link" aria-label="Grupos-Docente">
         Grupos
       </a>
     </li>
@@ -391,7 +393,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grupos" class="md-nav__link">
+  <a href="#grupos" class="md-nav__link" aria-label="grupos ">
     Grupos
   </a>
   
@@ -419,7 +421,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cuestionarios" class="md-nav__link">
+  <a href="#cuestionarios" class="md-nav__link" aria-label="Cuestionarios">
     Cuestionarios
   </a>
   
@@ -598,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../recursos/asistencia/" class="md-nav__link">
+      <a href="../../recursos/asistencia/" class="md-nav__link" aria-label="Asistencia-Docente">
         Asistencia
       </a>
     </li>
@@ -730,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/cuestionario/" class="md-nav__link">
+      <a href="../../actividades/cuestionario/" class="md-nav__link" aria-label="Cuestionarios-Docente">
         Cuestionarios
       </a>
     </li>
@@ -856,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -975,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1136,7 +1138,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#asistencia" class="md-nav__link">
+  <a href="#asistencia" class="md-nav__link" aria-label="Asistencia">
     Asistencia
   </a>
   
@@ -1167,12 +1169,12 @@
 <h2 id="reinicio_1"><strong>Reinicio</strong></h2>
 <p>El reinicio de un espacio en Moodle es la posibilidad de dejar en cero un curso teniendo como opción guardar configuraciones, calificaciones, actividades, elementos o componentes, foros y demás contenido del curso actual permitiendo así al inicio de cada semestre poder tener en el mismo espacio los diferentes estudiantes que harán parte de la asignatura en cuestión. </p>
 <p>Es importante tener en cuenta las opciones que se habilitarán posterior al reinicio, en los cuales es fundamental tener claro si se dejarán o no estudiantes, grupos, recursos y demás relevantes para la continuidad de la asignatura. Como se evidencia en la imagen 1, el módulo de “Reiniciar” se encuentra dentro de la Administración del curso.</p>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad01.png" /></p>
+<p><img alt="Menú administración del curso" src="/img/cursos/copiasseguridad/copiasseguridad01.png" /></p>
 <p>Imagen 1: Menú administración del curso</p>
 <p>Al ingresar al módulo “Reiniciar”, se encontrarán las siguientes características a tener en cuenta al momento de realizar el reinicio del curso o espacio correspondiente: General, Roles, Libro de calificaciones, Grupos y Foros. (ver Imagen 2). </p>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad02.png" /></p>
+<p><img alt="Módulo “Reiniciar curso”" src="/img/cursos/copiasseguridad/copiasseguridad02.png" /></p>
 <p>Imagen 2: Módulo “Reiniciar curso”</p>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad03.png" /></p>
+<p><img alt="Módulo “Reiniciar curso” características “General”" src="/img/cursos/copiasseguridad/copiasseguridad03.png" /></p>
 <p>Imagen 3: Módulo “Reiniciar curso” características “General”</p>
 <h3 id="general"><strong>General</strong></h3>
 <p>En el espacio general se puede eliminar eventos, anotaciones y/o comentarios, borrar datos de finalización y demás aspectos de ámbito general del curso como se evidencia en la imagen 3. Los siguientes numerales mencionan la descripción de cada una de las opciones anteriores:</p>
@@ -1185,7 +1187,7 @@
 <li><strong>Eliminar asociaciones de blog:</strong> Si se manejo dentro del curso recursos de blogs o wikis, estos aspectos internos serán removidos, no el contenido si no las asociaciones entre este recurso y algunos estudiantes.</li>
 <li><strong>Eliminar la clasificación de la competencia:</strong> Si se habilitaron competencias en el manejo de calificaciones y/o rúbricas de evaluación, estas serán eliminadas, a nivel de clasificaciones que se tengan contempladas en el curso.</li>
 </ul>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad04.png" /></p>
+<p><img alt="Módulo “Reiniciar curso” características “Roles”" src="/img/cursos/copiasseguridad/copiasseguridad04.png" /></p>
 <p>Imagen 4: Módulo “Reiniciar curso” características “Roles”</p>
 <h3 id="roles"><strong>Roles</strong></h3>
 <p>En la característica de roles dentro del módulo de reinicio se habilitan opciones de reinicio correspondientes a los roles dados en cualquier espacio del Moodle, teniendo la posibilidad de eliminar estudiantes del curso al reiniciar, o profesores sin permiso de edición entre otras, como se evidencia en la imagen 4. Las siguientes indicaciones describen cada una de las opciones de la categoría roles.</p>
@@ -1194,7 +1196,7 @@
 <li><strong>Eliminar todas las modificaciones en el curso:</strong> Cada uno de los ajustes realizados por los diferentes roles serán eliminados. </li>
 <li><strong>Eliminar todas las asignaciones de red locales:</strong> Se eliminarán cada uno de los roles a nivel del curso.</li>
 </ul>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad05.png" /></p>
+<p><img alt="Módulo “Reiniciar curso” características “Libro de calificaciones”" src="/img/cursos/copiasseguridad/copiasseguridad05.png" /></p>
 <p>Imagen 5: Módulo “Reiniciar curso” características “Libro de calificaciones”</p>
 <h3 id="libro-de-calificaciones"><strong>Libro de calificaciones</strong></h3>
 <p>En la característica del libro de calificaciones se pueden eliminar todos lo referido con las notas de cada una de las actividades y/o entregas realizadas por los participantes con rol estudiante del curso en cuestión. Cuenta con dos opciones para habilitar como se observa en la imagen 5. </p>
@@ -1202,7 +1204,7 @@
 <li><strong>Eliminar todos los ítems y categorías:</strong> En este espacio todas las categorías e ítems que se hayan creado dentro del curso serán eliminadas, tal como los cálculos que se hayan realizado en las ponderaciones.</li>
 <li><strong>Eliminar todas las calificaciones:</strong> Esta opción eliminará todas las calificaciones que se tengan en el libro de calificaciones, sin eliminar las categorías y cálculos realizados sobre estas</li>
 </ul>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad06.png" /></p>
+<p><img alt=" Módulo “Reiniciar curso” características “Grupos”" src="/img/cursos/copiasseguridad/copiasseguridad06.png" /></p>
 <p>Imagen 6: Módulo “Reiniciar curso” características “Grupos”</p>
 <h3 id="grupos"><strong>Grupos</strong></h3>
 <p>En la característica de grupos se configura si se requiere eliminar o no grupos al reiniciar el curso, en caso de que el espacio haya sido configurado para varios grupos de estudiantes. Las opciones que se tienen en esta categoría como se observa en la imagen 6 son las siguientes:</p>
@@ -1212,7 +1214,7 @@
 <li><strong>Eliminar todos los agrupamientos:</strong> Todos los agrupamientos que se hayan creado se eliminan y por ende todos los miembros de los mismos (al seleccionar esta opción se deshabilita la opción de “Quitar todos los miembros de los agrupamientos” puesto que esta se realiza).</li>
 <li><strong>Quitar todos los grupos de los agrupamientos:</strong> Si solamente se quiere eliminar a los estudiantes de cada agrupamiento pero dejando los agrupamientos creados se debe habilitar esta opción.</li>
 </ul>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad07.png" /></p>
+<p><img alt="Módulo “Reiniciar curso” características “Foros”" src="/img/cursos/copiasseguridad/copiasseguridad07.png" /></p>
 <p>Imagen 7: Módulo “Reiniciar curso” características “Foros”</p>
 <h3 id="foros"><strong>Foros</strong></h3>
 <p>Como parte de un recursos principal del Moodle, los foros, estos pueden quedar o no con las respuestas previas al reinicio, en caso de contemplar llevar un histórico de las diferentes respuestas del mismo. Para la aplicación del reinicio es importante tener en cuenta las opciones que se evidencian en la imagen 7, las cuales son:</p>
@@ -1227,7 +1229,7 @@
 </ul>
 <h3 id="adicionales"><strong>Adicionales</strong></h3>
 <p>Si el curso cuenta con algunos otros recursos de tipo tarea, cuestionarios, asistencias o demás pueden aparecer estas como opciones dentro de las características del módulo “reiniciar” como se puede ver en las siguientes imágenes. Cada una de estas permite eliminar las entregas o evidencias que los estudiantes hayan generado en cada recursos sin eliminar los recursos en sí.</p>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad08.png" />
+<p><img alt="“Reiniciar curso” características “Tareas”" src="/img/cursos/copiasseguridad/copiasseguridad08.png" />
 Imagen 8: Módulo “Reiniciar curso” características “Tareas”</p>
 <h3 id="tareas"><strong>Tareas</strong></h3>
 <p>Todas las tareas como recursos que se han dejado en el curso pueden ser restablecidas eliminando las entregas correspondientes para que queden disponibles para los nuevos estudiantes a matricularse.. Para la aplicación del reinicio es importante tener en cuenta las opciones que se evidencian en la imagen 8, las cuales son:</p>
@@ -1236,7 +1238,7 @@ Imagen 8: Módulo “Reiniciar curso” características “Tareas”</p>
 <li><strong>Eliminar todas las excepciones de usuario:</strong> Se eliminan todas las configuraciones y/o excepciones puntuales en este recurso para los estudiantes.</li>
 <li><strong>Eliminar todas las excepciones de grupo:</strong> Se eliminan todas las configuraciones y/o excepciones puntuales en este recurso para los grupos.</li>
 </ul>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad09.png" /></p>
+<p><img alt=" Módulo “Reiniciar curso” características “Cuestionarios”" src="/img/cursos/copiasseguridad/copiasseguridad09.png" /></p>
 <p>Imagen 9: Módulo “Reiniciar curso” características “Cuestionarios”</p>
 <h3 id="cuestionarios"><strong>Cuestionarios</strong></h3>
 <p>Todos los quices, evaluaciones finales y demás recursos de evaluación del recurso cuestionario pueden ser conservadas eliminando las respuestas de los estudiantes anteriores. Para la aplicación del reinicio es importante tener en cuenta las opciones que se evidencian en la imagen 8, las cuales son:</p>
@@ -1245,7 +1247,7 @@ Imagen 8: Módulo “Reiniciar curso” características “Tareas”</p>
 <li><strong>Eliminar todas las excepciones de usuario:</strong> Se eliminan todas las configuraciones y/o excepciones puntuales en este recurso para los estudiantes.</li>
 <li><strong>Eliminar todas las excepciones de grupo:</strong> Se eliminan todas las configuraciones y/o excepciones puntuales en este recurso para los grupos.</li>
 </ul>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad10.png" /></p>
+<p><img alt="Módulo “Reiniciar curso” características “Asistencia”" src="/img/cursos/copiasseguridad/copiasseguridad10.png" /></p>
 <p>Imagen 10: Módulo “Reiniciar curso” características “Asistencia”</p>
 <h3 id="asistencia"><strong>Asistencia</strong></h3>
 <p>Si el curso dispone de recursos de asistencia, este puede ser conservado eliminando todos los datos suministrados durante el curso actual. Para la aplicación del reinicio es importante tener en cuenta las opciones que se evidencian en la imagen 7, las cuales son:</p>
@@ -1253,7 +1255,7 @@ Imagen 8: Módulo “Reiniciar curso” características “Tareas”</p>
 <li><strong>Eliminar datos de asistencia:</strong> Se eliminan todos los datos correspondientes a la asistencia de los estudiantes actuales.</li>
 <li><strong>Eliminar todas las sesiones:</strong> Si se almacenaron sesiones a partir de la asistencia estas también pueden ser habilitadas para su eliminación.</li>
 </ul>
-<p><img alt="" src="/img/cursos/copiasseguridad/copiasseguridad11.png" /></p>
+<p><img alt="Módulo “Reiniciar curso” resumen de características seleccionadas" src="/img/cursos/copiasseguridad/copiasseguridad11.png" /></p>
 <p>Imagen 11: Módulo “Reiniciar curso” resumen de características seleccionadas</p>
 <p>Al final se podrá ver el resumen de las selecciones y opciones marcadas para reiniciar (ver Imagen 11). Al darle en continuar empieza a realizar el proceso y posterior a esto nos redireccionará a la página principal del curso con todas las opciones de reinicio aplicadas.</p>
 

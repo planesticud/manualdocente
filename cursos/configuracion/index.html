@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -370,7 +371,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grupos" class="md-nav__link">
+  <a href="#grupos" class="md-nav__link" aria-label="grupos">
     Grupos
   </a>
   
@@ -410,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../grupos/" class="md-nav__link">
+      <a href="../grupos/" class="md-nav__link" aria-label="Cursos">
         Grupos
       </a>
     </li>
@@ -856,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -975,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1122,7 +1123,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grupos" class="md-nav__link">
+  <a href="#grupos" class="md-nav__link" aria-label="Cursos 1">
     Grupos
   </a>
   
@@ -1166,74 +1167,74 @@
 <h1 id="configuracion">Configuración</h1>
 <p>Para que un docente pueda cambiar las configuraciones de sus cursos en la plataforma Moodle tienen la opción <strong>“Editar Ajustes”</strong> que se ubica dentro de la <strong>“Administración del curso”.</strong> En la configuración de un curso, se puede ajustar detalles propios del curso, desde el nombre, fechas de inicio y finalización, visualizar u ocultar cursos, hasta elegir el tipo de formato que queremos usar para mostrar los recursos y actividades. </p>
 <p>En Editar Ajustes se tienen varios ítems para realizar la configuración del curso, los cuales son los que se observan en la imagen 15.</p>
-<p><img alt="" src="/img/cursos/configuracion/configuracion01.png" /></p>
+<p><img alt=" Ítems de editar la configuración del curso" src="/img/cursos/configuracion/configuracion01.png" /></p>
 <p><em>Figura 15. Ítems de editar la configuración del curso</em></p>
 <h2 id="ajustes">Ajustes</h2>
 <p>Para revisar y ajustar esos ítems, debemos seguir la siguiente ruta:  </p>
 <pre><code>Administración de curso &gt; Editar ajustes
 </code></pre>
-<p><img alt="" src="/img/cursos/configuracion/configuracion02.png" /></p>
+<p><img alt="Editar ajustes" src="/img/cursos/configuracion/configuracion02.png" /></p>
 <p><em>Figura 16. Editar ajustes</em></p>
 <p>Después de ingresar a la ruta que se indicó anteriormente se puede comenzar a realizar la configuración del curso en cada uno de los ítems, cada uno tiene una funcionalidad o genera un comportamiento en el curso que permite que los estudiantes tengan una mejor interacción dentro del curso.</p>
 <h3 id="general"><strong>General</strong></h3>
 <ul>
-<li><strong>General</strong>: En este ítem se puede agregar o editar el nombre del curso, al agregar un nombre de curso es importante agregar el nombre corto del curso, cambiar la categoría a la cual pertenece, cambiar la visibilidad de los cursos (mostrar u ocultar curso), además de ajustar tanto la fecha de inicio como fecha de finalización del curso. <img alt="" src="/img/cursos/configuracion/configuracion03.png" /></li>
+<li><strong>General</strong>: En este ítem se puede agregar o editar el nombre del curso, al agregar un nombre de curso es importante agregar el nombre corto del curso, cambiar la categoría a la cual pertenece, cambiar la visibilidad de los cursos (mostrar u ocultar curso), además de ajustar tanto la fecha de inicio como fecha de finalización del curso. <img alt="Ítem General de Editar Ajustes de Curso" src="/img/cursos/configuracion/configuracion03.png" /></li>
 </ul>
 <p><em>Figura 17. Ítem General de Editar Ajustes de Curso</em></p>
 <h3 id="descripcion-del-curso"><strong>Descripcion del curso</strong></h3>
 <ul>
 <li><strong>Descripción del curso:</strong> Allí se puede agregar un pequeño resumen del curso que puede ser mostrado en la lista de cursos. Adicionalmente, se puede agregar un archivo que contenga dicho resumen.</li>
 </ul>
-<p><img alt="" src="/img/cursos/configuracion/configuracion04.png" /></p>
+<p><img alt="Item Descripción de Editar Ajustes de Curso" src="/img/cursos/configuracion/configuracion04.png" /></p>
 <p><em>Figura 18. Item Descripción de Editar Ajustes de Curso</em></p>
 <h3 id="formato-de-curso"><strong>Formato de curso</strong></h3>
 <ul>
 <li><strong>Formato de curso:</strong> En este apartado el docente podrá configurar la apariencia de cómo se visualiza el curso, podrá ajustar el formato de curso de preferencia o el que sea acorde a sus necesidades y forma de mostrar recursos y actividades. Podrá elegir entre varias opciones como Formato de temas, de botones, por semanas, pestañas, de actividad única, etc. Dependiendo del formato que se elija, se mostrarán opciones de configuración según el formato y sus características. </li>
 </ul>
-<p><img alt="" src="/img/cursos/configuracion/configuracion05.png" /></p>
+<p><img alt="Ítem Formato de curso de Editar Ajustes de Curso" src="/img/cursos/configuracion/configuracion05.png" /></p>
 <p><em>Figura 19. Ítem Formato de curso de Editar Ajustes de Curso</em></p>
 <p>Dependiendo del tipo de selección que realice en formato se habilitarán opciones adicionales para configurar la apariencia del curso, como es el caso de la opción de Temas en pestaña que, a diferencia del formato de temas, este habilita otras opciones como ocultar barra de pestañas, modo de visualización de la sección, si se desea usar resumen de tema como plantilla y si quiere mostrar un icono en enlaces de recursos en el resumen.</p>
-<p><img alt="" src="/img/cursos/configuracion/configuracion06.png" /></p>
+<p><img alt="Opción Temas en pestaña del ítem Formato de Curso" src="/img/cursos/configuracion/configuracion06.png" /></p>
 <p><em>Figura 20. Opción Temas en pestaña del ítem Formato de Curso</em></p>
-<p><img alt="" src="/img/cursos/configuracion/configuracion07.png" /></p>
+<p><img alt="Tema en pestaña del ítem Formato de Curso" src="/img/cursos/configuracion/configuracion07.png" /></p>
 <p><em>Figura 21. Tema en pestaña del ítem Formato de Curso</em></p>
 <h3 id="apariencia"><strong>Apariencia</strong></h3>
 <ul>
-<li><strong>Apariencia</strong>: Este apartado se enfoca en darle una apariencia propia al curso, desde forzar a un idioma en específico (depende de los idiomas instalados), número de foros de anuncios, así como mostrar el libro de calificaciones a los estudiantes y mostrar informes de actividades.<img alt="" src="/img/cursos/configuracion/configuracion08.png" /></li>
+<li><strong>Apariencia</strong>: Este apartado se enfoca en darle una apariencia propia al curso, desde forzar a un idioma en específico (depende de los idiomas instalados), número de foros de anuncios, así como mostrar el libro de calificaciones a los estudiantes y mostrar informes de actividades.<img alt="Ítem Apariencia de curso" src="/img/cursos/configuracion/configuracion08.png" /></li>
 </ul>
 <p><em>Figura 22. Ítem Apariencia de curso</em></p>
 <h3 id="archivos-y-subida"><strong>Archivos y subida</strong></h3>
 <ul>
 <li><strong>Archivos y subida</strong>: El ítem solo permite hacer un cambio, el cual corresponde al tamaño máximo para los archivos cargados por los usuarios, en este caso está determinado a 2GB por el administrador. </li>
 </ul>
-<p><img alt="" src="/img/cursos/configuracion/configuracion09.png" /></p>
+<p><img alt="Ítem Archivos y subidas" src="/img/cursos/configuracion/configuracion09.png" /></p>
 <p><em>Figura 23. Ítem Archivos y subidas</em>** </p>
 <h3 id="rastro-de-finalizacion"><strong>Rastro de finalizacion</strong></h3>
 <ul>
 <li><strong>Rastreo de finalización</strong>: Aquí solo se puede habilitar o deshabilitar el rastreo de grado de finalización. En caso de habilitarse, puede ajustarse y cambiarse las condiciones de finalización de actividades además de las condiciones de finalización del curso. Es útil para el rastreo del uso de la plataforma por parte de los estudiantes.</li>
 </ul>
-<p><img alt="" src="/img/cursos/configuracion/configuracion10.png" /></p>
+<p><img alt=" Ítem Rastreo de finalización" src="/img/cursos/configuracion/configuracion10.png" /></p>
 <p><em>Figura 24. Ítem Rastreo de finalización</em></p>
 <h3 id="grupos"><strong>Grupos</strong></h3>
 <ul>
 <li><strong>Imagen X. Grupos</strong>: Este ítem se enfoca en la configuración de grupos, iniciando con el modo de grupos, donde se elige entre: No hay grupos, donde todos los estudiantes pertenecen a un gran grupo; grupos separados, cada estudiante solo puede ver su grupo y los demás son invisibles; y grupos visibles, donde cada estudiante trabaja en su grupo pero puede visualizar los otros grupos. El habilitar “forzar el modo de grupo” implica que se aplicará a todas las actividades, no las que se ajusten con el apartado de grupos. </li>
 </ul>
-<p><img alt="" src="/img/cursos/configuracion/configuracion11.png" /></p>
+<p><img alt="Ítem Grupos y sus opciones" src="/img/cursos/configuracion/configuracion11.png" /></p>
 <p><em>Figura 25. Ítem Grupos y sus opciones</em></p>
 <h3 id="roles"><strong>Roles</strong></h3>
 <ul>
 <li><strong>Renombrar Rol</strong>: Se permite hacer cambios en los nombres de los roles sin alterar su configuración en otro curso y tampoco sin cambiar los permisos de los roles en general. Solo se permite cambiar los roles que se encuentren en el curso.</li>
 </ul>
-<p><img alt="" src="/img/cursos/configuracion/configuracion12.png" /></p>
+<p><img alt="Ítem Renombrar roles" src="/img/cursos/configuracion/configuracion12.png" /></p>
 <p><em>Figura 26. Ítem Renombrar roles</em></p>
 <h3 id="marcas"><strong>Marcas</strong></h3>
 <ul>
 <li><strong>Marcas</strong>: Son palabras claves o tags usadas dentro Moodle, estas se pueden ajustar en publicaciones en foros, cursos, actividades o recursos, etc. Los usuarios pueden hacer búsquedas con estos tags y se mostrarán todo lo relacionado que se ajuste a esta palabra clave. Para conocer más de su funcionamiento, dirigirse a https://docs.moodle.org/all/es/Marcas</li>
 </ul>
-<p><img alt="" src="/img/cursos/configuracion/configuracion13.png" /></p>
+<p><img alt="Ítem Marcas" src="/img/cursos/configuracion/configuracion13.png" /></p>
 <p><em>Figura 27. Ítem Marcas</em></p>
 <p><strong>NOTA:</strong> En la configuración de curso, se encuentran apartados que son obligatorios diligenciar o configurar y estos se encuentran marcados con un icono rojo con un signo de exclamación.</p>
-<p><img alt="" src="/img/cursos/configuracion/configuracion14.png" /></p>
+<p><img alt="Indicación de Moodle para los campos obligatorios." src="/img/cursos/configuracion/configuracion14.png" /></p>
 <p><em>Figura 28. Indicación de Moodle para los campos obligatorios.</em></p>
 
 
@@ -1271,7 +1272,7 @@
       
       
         
-        <a href="../grupos/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Grupos" rel="next">
+        <a href="../grupos/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Grupos" rel="next" >
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">

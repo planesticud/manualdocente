@@ -58,8 +58,11 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,13 +121,13 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
+
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
@@ -828,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -947,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1111,11 +1114,11 @@
 <h2 id="calificaciones_1">Calificaciones</h2>
 <p>Las calificaciones van de la mano con cada actividad evaluativa en Moodle, como tarea, taller, cuestionario, incluso foro (una nueva funcionalidad de Moodle 3.8). Es importante contar con un criterio y rango calificativo establecido, pues de eso depende la funcionalidad efectiva para los usuarios.</p>
 <p>Para iniciar, es recomendable tener establecido la misma puntuación en la configuración de cada actividad. Esto se configura en cada una de las actividades en el apartado de “editar..”. Para el caso específico de los cuestionarios, se ajusta en el apartado “editar cuestionario” y se asigna el valor determinado en el recuadro de Calificación máxima.</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones01.png" /></p>
-<p><strong>Imagen X. Ajuste de calificación máxima de un cuestionario</strong></p>
+<p><img alt="Ajuste de calificación máxima de un cuestionario" src="/img/cursos/calificaciones/calificaciones01.png" /></p>
+<p><strong>Imagen 20. Ajuste de calificación máxima de un cuestionario</strong></p>
 <h2 id="configuracion"><strong>Configuración</strong></h2>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones02.png" /></p>
-<p><strong>Imagen X. Configuración Calificaciones</strong></p>
+<p><img alt="Configuración Calificaciones" src="/img/cursos/calificaciones/calificaciones02.png" /></p>
+<p><strong>Imagen 21. Configuración Calificaciones</strong></p>
 <p>En este apartado el docente del aula podrá configurar de manera global las diferentes actividades en el aula. En esta página encuentra tres pestañas: configuración calificaciones &gt; ajustes de la calificación del curso &gt; Preferencias: Informe del calificador. A continuación, se presentan cada una de estas opciones:   </p>
 <h3 id="configuracion-calificaciones"><strong>Configuración calificaciones</strong></h3>
 <p>Esta opción contiene todas las actividades del aula con una disposición gráfica en la que podemos encontrar el nombre, las ponderaciones aplicadas de todas las calificaciones discriminadas una a una y la sumatoria con otros elementos de calificación, calificaciones máximas y las acciones de edición de cada recurso. </p>
@@ -1131,8 +1134,8 @@
 <p><strong>Resetear peso:</strong> permite poner en cero la ponderación asignada a todas las actividades. </p>
 </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones03.png" /></p>
-<p><strong>Imagen X. Configuración Calificaciones uno a uno.</strong></p>
+<p><img alt="Configuración Calificaciones uno a uno." src="/img/cursos/calificaciones/calificaciones03.png" /></p>
+<p><strong>Imagen 22. Configuración Calificaciones uno a uno.</strong></p>
 <p>Al dar clic en editar ajustes se abrirá las opciones de edición de <strong>categoría de calificación</strong> y <strong>total categoría</strong>, en la primera encontrará las opciones:</p>
 <ul>
 <li>
@@ -1176,8 +1179,8 @@
 <ul>
 <li>Por último, está la opción de guardar cambios y cancelar. </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones04.png" /></p>
-<p><strong>Imagen X. Editar ajuste categoría de calificación.</strong></p>
+<p><img alt="Editar ajuste categoría de calificación." src="/img/cursos/calificaciones/calificaciones04.png" /></p>
+<p><strong>Imagen 23. Editar ajuste categoría de calificación.</strong></p>
 <h3 id="ajustes-de-la-calificacion-del-curso"><strong>Ajustes de la calificación del curso</strong></h3>
 <p>Los ajustes del curso determinan cómo aparece el libro de calificaciones a todos los participantes del curso. Podemos configurar los ajustes generales, ajustes de ítems de calificación, informe general y usuario. A continuación, se muestra cada una de estas opciones:</p>
 <ul>
@@ -1194,8 +1197,8 @@
 <p><strong>Usuario:</strong> en este apartado podemos configurar todo lo que el estudiante puede o no ver respecto a las calificaciones del informe calificador. Como son ranking, porcentaje, calificaciones, retroalimentaciones, pesos, promedio, calificaciones con letras, aportación al total del curso, rangos, decimales, ítems ocultos y ocultar totales si contienen ítems ocultos. En cada una de estas opciones encontramos ocultar o mostrar según lo deseado.</p>
 </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones05.png" />*  </p>
-<p><strong>Imagen X. Ajustes de la calificación del curso</strong></p>
+<p><img alt="Ajustes de la calificación del curso" src="/img/cursos/calificaciones/calificaciones05.png" />*  </p>
+<p><strong>Imagen 24. Ajustes de la calificación del curso</strong></p>
 <h3 id="preferencias-informe-del-calificador"><strong>Preferencias: Informe del calificador</strong></h3>
 <p>En este apartado se podrá configurar la presentación general del informe calificador, para ello están los menús:</p>
 <ul>
@@ -1206,54 +1209,54 @@
 <p><strong>Filas especiales:</strong> desde este apartado podremos configurar los datos que conforman las filas y columnas del informe calificador, como:</p>
 </li>
 <li>
-<p><strong>Tipo de visualización del rango:</strong> especifica cómo visualizar los rangos, si se toma la opción Heredar, el tipo de visualización para cada columna es usado.<img alt="" src="/img/cursos/calificaciones/calificaciones06.png" /></p>
+<p><strong>Tipo de visualización del rango:</strong> especifica cómo visualizar los rangos, si se toma la opción Heredar, el tipo de visualización para cada columna es usado.<img alt="Heredar el tipo de Visualizacion" src="/img/cursos/calificaciones/calificaciones06.png" /></p>
 </li>
 <li>
 <p><strong>Decimales en los rangos:</strong> especifica el número de puntos decimales que se visualizarán para cada rango. Esta opción puede ser anulada por cada ítem de calificación de manera individual.</p>
 </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones07.png" /></p>
+<p><img alt="Decimales en los rangos" src="/img/cursos/calificaciones/calificaciones07.png" /></p>
 <ul>
 <li><strong>Modo de visualización en el promedio de las columnas:</strong> especifica cómo se presenta la media para cada columna. Si se selecciona Heredar, se usará el tipo de vista para cada columna.  </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones08.png" /></p>
+<p><img alt="Modo de visualización en el promedio de las columnas" src="/img/cursos/calificaciones/calificaciones08.png" /></p>
 <ul>
 <li><strong>Número de decimales en el promedio de las columnas:</strong> especifica el número de decimales a mostrar en la media de cada columna. Si se selecciona Heredar, se usará el tipo de vista para cada columna.  </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones09.png" /></p>
+<p><img alt="Número de decimales en el promedio de las columnas" src="/img/cursos/calificaciones/calificaciones09.png" /></p>
 <ul>
 <li><strong>Calificaciones seleccionadas para promedios de columna:</strong> especifica el tipo de calificaciones que se incluirán en los promedios de columna. Las celdas sin calificación se pasarán por alto, o serán calificadas con 0 (ajuste por defecto).</li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones10.png" /></p>
+<p><img alt="Calificaciones seleccionadas para promedios de columna" src="/img/cursos/calificaciones/calificaciones10.png" /></p>
 <ul>
 <li><strong>Mostrar número de calificaciones en los promedios:</strong> muestra el número de calificaciones que se están generando junto a cada promedio, entre paréntesis. Ejemplo: 45 (34).</li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones11.png" /></p>
+<p><img alt="Mostrar número de calificaciones en los promedios" src="/img/cursos/calificaciones/calificaciones11.png" /></p>
 <ul>
 <li>
 <p><strong>General:</strong> Desde este apartado podemos activar y configurar las opciones de disposición y visibilización de las calificaciones al usuario. Tales como: </p>
 <ul>
 <li>
-<p><strong>Calificación rápida:</strong> si se habilita, cuando se activa la edición, aparece una caja para introducir texto para cada calificación, lo que permite editar varias calificaciones al mismo tiempo. Los cambios son guardados y resaltados cuando se hace clic en el botón para actualizar. Observe que cuando se edita una calificación dentro del informe calificador, se activa un indicador de sobre escritura que indica que esta calificación ya no podrá ser cambiada desde la actividad misma. Las opciones son, no o sí.<img alt="" src="/img/cursos/calificaciones/calificaciones12.png" /></p>
+<p><strong>Calificación rápida:</strong> si se habilita, cuando se activa la edición, aparece una caja para introducir texto para cada calificación, lo que permite editar varias calificaciones al mismo tiempo. Los cambios son guardados y resaltados cuando se hace clic en el botón para actualizar. Observe que cuando se edita una calificación dentro del informe calificador, se activa un indicador de sobre escritura que indica que esta calificación ya no podrá ser cambiada desde la actividad misma. Las opciones son, no o sí.<img alt="Calificación rápida" src="/img/cursos/calificaciones/calificaciones12.png" /></p>
 </li>
 <li>
 <p><strong>Mostrar retroalimentación rápida:</strong> si se habilita, cuando se activa la edición aparece una caja con bordes punteados para introducir el texto para cada calificación, lo que permite introducir comentarios para varias calificaciones al mismo tiempo. Los cambios son guardados y resaltados cuando se hace clic en el botón para actualizar. Las opciones son sí o no. </p>
 </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones13.png" /></p>
+<p><img alt="Mostrar retroalimentación rápida" src="/img/cursos/calificaciones/calificaciones13.png" /></p>
 <ul>
 <li><strong>Estudiantes por página:</strong> en esta opción se puede programar el número de estudiantes a mostrar por página en el informe del calificador. Se tiene un espacio para ingresar el número que se desee.</li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones14.png" /></p>
+<p><img alt="Estudiantes por página" src="/img/cursos/calificaciones/calificaciones14.png" /></p>
 <ul>
 <li>
-<p><strong>Mostrar solamente matriculaciones activas:</strong> este ajuste determina si solo los usuarios activos serán visibles en el informe del libro de calificaciones. Si se activa, los usuarios suspendidos no se mostrarán en el libro de calificaciones. Las opciones son sí o no.<img alt="" src="/img/cursos/calificaciones/calificaciones15.png" /></p>
+<p><strong>Mostrar solamente matriculaciones activas:</strong> este ajuste determina si solo los usuarios activos serán visibles en el informe del libro de calificaciones. Si se activa, los usuarios suspendidos no se mostrarán en el libro de calificaciones. Las opciones son sí o no.<img alt="Mostrar solamente matriculaciones activas" src="/img/cursos/calificaciones/calificaciones15.png" /></p>
 </li>
 <li>
-<p><strong>Posición del resultado del cálculo:</strong> este parámetro <em>valor</em>, determina si las columnas de totales de las categorías y los cursos se muestran al principio o al final en los informes del libro de calificaciones. Las opciones son primero o último.<img alt="" src="/img/cursos/calificaciones/calificaciones16.png" /></p>
+<p><strong>Posición del resultado del cálculo:</strong> este parámetro <em>valor</em>, determina si las columnas de totales de las categorías y los cursos se muestran al principio o al final en los informes del libro de calificaciones. Las opciones son primero o último.<img alt="Posición del resultado del cálculo" src="/img/cursos/calificaciones/calificaciones16.png" /></p>
 </li>
 <li>
-<p><strong>Habilitar AJAX:</strong> agrega una capa de funcionalidad AJAX al informe calificador, simplificando y agilizando las opciones comunes. Esto depende de que el JavaScript esté activado en el navegador del usuario. Las opciones son sí o no.<img alt="" src="/img/cursos/calificaciones/calificaciones17.png" /></p>
+<p><strong>Habilitar AJAX:</strong> agrega una capa de funcionalidad AJAX al informe calificador, simplificando y agilizando las opciones comunes. Esto depende de que el JavaScript esté activado en el navegador del usuario. Las opciones son sí o no.<img alt="Habilitar AJAX" src="/img/cursos/calificaciones/calificaciones17.png" /></p>
 </li>
 <li>
 <p>Por último, encontrará la opción guardar cambios o cancelar.</p>
@@ -1277,33 +1280,33 @@
 <p>Por último, encontrará los botones de guardar cambios y cancelar.</p>
 </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones18.png" /> </p>
-<p><strong>Imagen X. Ajustes escalas del curso.</strong></p>
+<p><img alt="Ajustes escalas del curso." src="/img/cursos/calificaciones/calificaciones18.png" /> </p>
+<p><strong>Imagen 25. Ajustes escalas del curso.</strong></p>
 <p>A continuación, en el menú de administración de calificaciones encontramos el apartado para la edición y ajustes de las letras del informe calificador. En este apartado encontramos las opciones de vista y editar. En vista aparecen los ítems que por defecto se crean en el sitio, estas opciones están distribuidas por las opciones más alta, más baja y letra. Esta escala valorativa va desde 100% a 0% y desde la letra A hasta la F. En este apartado encontramos tres botones que lo llevará al mismo lugar, en donde podrá <em>editar las letras de calificación</em> y su carga porcentual. Estos tres botones son Editar que esta al lado de la opción de vista y editar letras de calificación que está en la parte superior e inferior de la opción vista. </p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones19.png" /></p>
+<p><img alt="Editar Letras de Calificación" src="/img/cursos/calificaciones/calificaciones19.png" /></p>
 <p>En la opción editar encontramos las letras de calificación y el rango de la calificación que cada una asigna, estos datos los podrá adecuar a su preferencia. Para ello debe marcar la casilla <em>pasar por alto los valores por defecto del sitio</em>, al hacerlo realiza la anulación de los valores por defecto del sitio al visualizar las calificaciones en el libro calificador. Esto permite de manera manual definir las calificaciones en letras y los límites o cargas porcentuales de cada una. Luego de parametrizar las letras de las calificaciones encontrará al final los botones de guardar cambios y el de cancelar. </p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones20.png" /></p>
+<p><img alt="Editar rango De calificación" src="/img/cursos/calificaciones/calificaciones20.png" /></p>
 <p>Continuando con las opciones de administración de calificaciones encontramos importar calificaciones previamente desarrolladas y parametrizadas por el docente, para ello contamos con la posibilidad de importar las calificaciones en archivo CSV, pegar desde hoja de cálculo y archivo XML. A continuación, se describen las opciones de cada una de estas opciones:</p>
 <p>Archivo CSV: desde esta opción se pueden importar archivos en formato separados por comas, para ello se cuenta con las opciones de:</p>
 <p>Cargar <strong>archivo</strong>* en donde puede arrastrar y soltar el archivo o abrir el archivo desde su dispositivo.</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones21.png" /></p>
+<p><img alt="Cargar archivo" src="/img/cursos/calificaciones/calificaciones21.png" /></p>
 <ul>
 <li><strong>Codificación,</strong> en donde debe seleccionar la codificación de caracteres usada para los datos. (la codificación estándar es UTF-8.) Si por error se selecciona una codificación equivocada, se notará al previsualizar los datos a importar.</li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones22.png" /></p>
+<p><img alt="Codificación" src="/img/cursos/calificaciones/calificaciones22.png" /></p>
 <ul>
 <li><strong>Separador</strong>, permite seleccionar el separador usado en archivo CSV (normalmente es una coma).</li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones23.png" /></p>
+<p><img alt="Separador" src="/img/cursos/calificaciones/calificaciones23.png" /></p>
 <ul>
 <li>
-<p><strong>Escala de texto</strong>, la escala verbal usa palabras en lugar de números. Seleccione <em>sí</em> si desea importar las escalas numéricas y verbales. Seleccione <em>no</em> si solo desea importar las escalas numéricas únicamente.<img alt="" src="/img/cursos/calificaciones/calificaciones24.png" /></p>
+<p><strong>Escala de texto</strong>, la escala verbal usa palabras en lugar de números. Seleccione <em>sí</em> si desea importar las escalas numéricas y verbales. Seleccione <em>no</em> si solo desea importar las escalas numéricas únicamente.<img alt="Escala de texto" src="/img/cursos/calificaciones/calificaciones24.png" /></p>
 </li>
 <li>
-<p><strong>Previsualizar filas</strong>, la información a importar puede ser vista antes de confirmar la importación, desde acá puede determinar cuántas filas se muestran en la vista previa. También encontramos la casilla para marcar si se requiere <em>forzar importar</em>, si se activa se fuerza importación de calificaciones incluso si se actualizan las calificaciones después de importar el archivo de importación. Por último, encontraremos el botón de subir calificaciones. <img alt="" src="/img/cursos/calificaciones/calificaciones25.png" /></p>
+<p><strong>Previsualizar filas</strong>, la información a importar puede ser vista antes de confirmar la importación, desde acá puede determinar cuántas filas se muestran en la vista previa. También encontramos la casilla para marcar si se requiere <em>forzar importar</em>, si se activa se fuerza importación de calificaciones incluso si se actualizan las calificaciones después de importar el archivo de importación. Por último, encontraremos el botón de subir calificaciones. <img alt="Previsualizar filas" src="/img/cursos/calificaciones/calificaciones25.png" /></p>
 </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones26.png" /></p>
+<p><img alt="Calificaciones" src="/img/cursos/calificaciones/calificaciones26.png" /></p>
 <ul>
 <li>
 <p><strong>Pegar desde hoja de cálculo:</strong> en este apartado se puede traer una sección de una hoja de cálculo de calificaciones para incorporar al informe calificador, para ello encontramos las siguientes opciones:</p>
@@ -1322,11 +1325,11 @@
 </li>
 </ul>
 <p>También encontramos la casilla para marcar si se requiere <strong><em>forzar importar</em>,</strong> si se activa se fuerza importación de calificaciones incluso si se actualizan las calificaciones después de importar el archivo de importación. Por último, encontraremos el botón de <strong>subir calificaciones</strong>.</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones27.png" /></p>
+<p><img alt="Previsualizar filas" src="/img/cursos/calificaciones/calificaciones27.png" /></p>
 <ul>
 <li><strong>Archivo XML</strong>: en este apartado se maneja la opción de traer el archivo de calificaciones con formato Excel, de esta manera lo podemos importar al libro de calificaciones, para ello se cuenta con dos opciones, la primera es traer o arrastrar el archivo desde mi ordenador o a través de la URL del archivo para vincularlo de manera remota desde otro servidor. De igual manera en la parte superior encontrará la casilla de importar retroalimentación que puede haber en el archivo a importar, para activar esta opción debe dejarla seleccionada. </li>
 </ul>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones28.png" /> </p>
+<p><img alt="Archivo XML" src="/img/cursos/calificaciones/calificaciones28.png" /> </p>
 <p>Otra de las funciones que podrá encontrar en el apartado de configuración de calificaciones es la opción de exportar.  A continuación, se muestran las diferentes opciones de exportación de libro de calificaciones del aula:</p>
 <ul>
 <li><strong>Hoja de cálculo OpenOffice: en esta opción encontrará:</strong></li>
@@ -1334,14 +1337,14 @@
 <p>Los <em>ítems de calificación a incluir</em> en el archivo que va a exportar. En este punto se enlistan una a una las actividades que tienen calificación en el aula, en la parte inferior encuentra la opción de seleccionar solo el total del curso sin ninguna discriminación por actividad y también encontrara la opción de seleccionar todas o ninguna, lo cual resulta útil cuando se tienen varias actividades.</p>
 <p><em>Opciones de formatos de exportación</em> desde este punto podrá configurar la apariencia del informe a exportar de manera global, para ello cuenta con las opciones de incluir retroalimentación en la exportación, excluir los usuarios suspendidos, mostrar tipos de exportación de calificaciones (real, porcentaje y letra) y puntos decimales en la exportación de calificaciones. Para activar o desactivar estas opciones debe dar clic en la casilla de validación correspondiente.  </p>
 <p>Por último, encontrará el botón de descargar para iniciar el proceso. Una vez lo active automáticamente se descargará en su equipo el archivo.*  </p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones29.png" /></p>
+<p><img alt="Hoja de cálculo OpenOffice" src="/img/cursos/calificaciones/calificaciones29.png" /></p>
 <ul>
 <li><strong>Archivo en texto plano:</strong></li>
 </ul>
 <p>Al igual que la opción anterior encontrará los <em>ítems de calificación a incluir</em> en el archivo que va a exportar. En este punto se enlistan una a una las actividades que tienen calificación en el aula, en la parte inferior encuentra la opción de seleccionar solo el total del curso sin ninguna discriminación por actividad y también encontrara la opción de seleccionar todas o ninguna, lo cual resulta útil cuando se tienen varias actividades.</p>
 <p><em>Opciones de formatos de exportación</em> desde este punto podrá configurar la apariencia del informe a exportar de manera global, para ello cuenta con las opciones de <strong>incluir retroalimentación en la exportación</strong>, <strong>excluir los usuarios suspendidos</strong>, <strong>mostrar tipos de exportación de calificaciones</strong> (real, porcentaje y letra), <strong>puntos decimales en la exportación de calificaciones</strong> y por último, encontrará la opción de <strong>separador</strong> para los datos en el texto plano, ya sea tabulador, coma, dos puntos, punto y coma. Para activar o desactivar estas opciones debe dar clic en la casilla de validación correspondiente</p>
 <p>En la parte inferior encontrará el botón de descargar para iniciar el proceso. Una vez lo active automáticamente se descargará en su equipo el archivo. </p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones30.png" /></p>
+<p><img alt="Archivo en texto plano:" src="/img/cursos/calificaciones/calificaciones30.png" /></p>
 <ul>
 <li><strong>Hoja de cálculo Excel:</strong></li>
 </ul>
@@ -1349,7 +1352,7 @@
 <p>ítems de calificación a incluir en el archivo que va a exportar. En este punto se enlistan una a una las actividades que tienen calificación en el aula, en la parte inferior encuentra la opción de seleccionar solo el total del curso sin ninguna discriminación por actividad y también encontrara la opción de seleccionar todas o ninguna, lo cual resulta útil cuando se tienen varias actividades.</p>
 <p>Opciones de formatos de exportación desde este punto podrá configurar la apariencia del informe a exportar de manera global, para ello cuenta con las opciones de incluir retroalimentación en la exportación, excluir los usuarios suspendidos, mostrar tipos de exportación de calificaciones (real, porcentaje y letra) y puntos decimales en la exportación de calificaciones. Para activar o desactivar estas opciones debe dar clic en la casilla de validación correspondiente.  </p>
 <p>Por último, encontrará el botón de descargar para iniciar el proceso. Una vez lo active automáticamente se descargará en su equipo el archivo.  </p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones31.png" /></p>
+<p><img alt="Hoja de cálculo Excel" src="/img/cursos/calificaciones/calificaciones31.png" /></p>
 <ul>
 <li>
 <p><strong>Archivo XML:</strong></p>
@@ -1365,29 +1368,29 @@
 </li>
 </ul>
 <p>Por último, encontrará el botón de descargar para iniciar el proceso. Una vez lo active automáticamente se descargará en su equipo el archivo.*  </p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones32.png" /></p>
+<p><img alt="Exportar XML" src="/img/cursos/calificaciones/calificaciones32.png" /></p>
 <h3 id="rubricas"><strong>Rúbricas</strong>*</h3>
 <p>Las rúbricas son un método de calificación basado en criterios. En cada uno de los criterios se detallan unos niveles y se les asigna una calificación numérica, esto para dar a conocer a los usuarios los criterios que serán evaluados en la actividad y que descripciones tiene cada nivel de calificación.</p>
 <p>Para habilitar las rúbricas en la actividad (tarea y foro) solo se debe seguir la ruta Administración de la actividad &gt; Calificación avanzada.</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones33.png" /></p>
-<p><strong>Imagen X. Calificación avanzada en la administración de la actividad.</strong></p>
+<p><img alt="Calificación avanzada en la administración de la actividad." src="/img/cursos/calificaciones/calificaciones33.png" /></p>
+<p><strong>Imagen 26. Calificación avanzada en la administración de la actividad.</strong></p>
 <p>Al dar clic, deberá elegir la opción de rúbrica, la cual generará dos opciones. Para este caso, elegiremos la opción “Nuevo formulario desde cero”</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones34.png" /></p>
-<p><strong>Imagen X. Elección de rúbrica como método de calificación de actividad.</strong></p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones35.png" /></p>
-<p><strong>Imagen X. Elección de “Nuevo formulario desde cero” para la creación de la rúbrica.</strong></p>
+<p><img alt="Elección de rúbrica como método de calificación de actividad." src="/img/cursos/calificaciones/calificaciones34.png" /></p>
+<p><strong>Imagen 27. Elección de rúbrica como método de calificación de actividad.</strong></p>
+<p><img alt="Elección de “Nuevo formulario desde cero” para la creación de la rúbrica." src="/img/cursos/calificaciones/calificaciones35.png" /></p>
+<p><strong>Imagen 28. Elección de “Nuevo formulario desde cero” para la creación de la rúbrica.</strong></p>
 <p>Una vez seleccionada esta opción, debemos asignar un nombre al formulario y una descripción si así se requiere, además de agregar los criterios correspondientes a la rúbrica. Cada uno puede tener los niveles que se necesiten, pero es ideal manejarlo en rango de 0-5 o 1-5 donde estén los 5 o 6 niveles.</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones36.png" /></p>
-<p><strong>Imagen X. Nombre y descripción del nuevo formulario de rúbrica.</strong></p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones37.png" /></p>
-<p><strong>Imagen X. Ejemplo de criterio e ítems de edición en la rúbrica.</strong></p>
+<p><img alt="Nombre y descripción del nuevo formulario de rúbrica." src="/img/cursos/calificaciones/calificaciones36.png" /></p>
+<p><strong>Imagen 29. Nombre y descripción del nuevo formulario de rúbrica.</strong></p>
+<p><img alt="Ejemplo de criterio e ítems de edición en la rúbrica." src="/img/cursos/calificaciones/calificaciones37.png" /></p>
+<p><strong>Imagen 30. Ejemplo de criterio e ítems de edición en la rúbrica.</strong></p>
 <p>En la edición de la rúbrica, podemos agregar niveles, editar los textos, copiar un criterio para editar detalles que cambien, editar los puntajes en cada uno de los niveles, así como mover o eliminar cada criterio.</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones38.png" /></p>
-<p><strong>Imagen X. Opciones de rúbrica.</strong></p>
+<p><img alt="Opciones de rúbrica." src="/img/cursos/calificaciones/calificaciones38.png" /></p>
+<p><strong>Imagen 31. Opciones de rúbrica.</strong></p>
 <p>En las opciones de rúbrica, puede seleccionar o no, los ítems relacionados en la imagen, adicionalmente se puede configurar la ordenación por niveles. </p>
 <p>Para generar una calificación por medio de rúbrica, ésta aparecerá al momento de calificar la actividad, incluso agregando observaciones.</p>
-<p><img alt="" src="/img/cursos/calificaciones/calificaciones39.png" /></p>
-<p><strong>Imagen X. Evaluación de actividad por medio de rúbrica.</strong></p>
+<p><img alt="Evaluación de actividad por medio de rúbrica." src="/img/cursos/calificaciones/calificaciones39.png" /></p>
+<p><strong>Imagen 32. Evaluación de actividad por medio de rúbrica.</strong></p>
 
 
 

@@ -58,8 +58,11 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+      <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,13 +121,13 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
+
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
@@ -896,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actividades/taller.md" class="md-nav__link">
+      <a href="../../actividades/taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -1015,7 +1018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1255,18 +1258,18 @@
 <ol>
 <li>Ingresar a la página principal del curso, activar la edición del curso </li>
 </ol>
-<p><img alt="" src="/img/recursos/libro/libro01.png" /></p>
+<p><img alt=" buscar el recurso libro y dar clic en agregar" src="/img/recursos/libro/libro01.png" /></p>
 <ol>
 <li>Dar clic en añadir una actividad o un recurso, buscar el recurso libro y dar clic en agregar </li>
 </ol>
-<p><img alt="" src="/img/recursos/libro/libro02.png" /></p>
-<p><img alt="" src="/img/recursos/libro/libro03.png" /></p>
+<p><img alt="Añadir una actividad o Recurso" src="/img/recursos/libro/libro02.png" /></p>
+<p><img alt="Agregar Libro" src="/img/recursos/libro/libro03.png" /></p>
 <ol>
 <li>Se habilita el formulario de configuración general del recurso:</li>
 </ol>
 <h3 id="general"><strong>General:</strong></h3>
 <p>En este espacio debe ubicar el nombre del libro y si desea una descripción de este.</p>
-<p><img alt="" src="/img/recursos/libro/libro04.png" /> </p>
+<p><img alt="ubicar el nombre del libro y si desea una descripción de este" src="/img/recursos/libro/libro04.png" /> </p>
 <h3 id="apariencia"><strong>Apariencia:</strong></h3>
 <p>Esta opción por defecto viene colapsada, para realizar su ajuste se debe expandir dando clic sobre la palabra <em>Apariencia, a</em>quí permite realizar la selección de como se mostrará la división de los capítulos, permite las siguientes opciones: </p>
 <h4 id="numeracion-del-capitulo">Numeración del capítulo:</h4>
@@ -1282,7 +1285,7 @@
 <li><strong>Imágenes:</strong> Los iconos se utilizan para la navegación. </li>
 <li><strong>Texto:</strong> Los títulos de capítulos se usan para la navegación.</li>
 </ul>
-<p><img alt="" src="/img/recursos/libro/libro05.png" /></p>
+<p><img alt="Apariencia" src="/img/recursos/libro/libro05.png" /></p>
 <h3 id="ajustes-comunes-del-modulo"><strong>Ajustes comunes del módulo:</strong></h3>
 <h4 id="disponibilidad">Disponibilidad:</h4>
 <ul>
@@ -1291,48 +1294,48 @@
 </ul>
 <h4 id="numero-id">Número ID:</h4>
 <p>Proporciona una forma de identificar la actividad para fines como el cálculo de calificaciones o informes personalizados. De lo contrario, el campo se puede dejar en blanco. Para las actividades calificables el número de ID también se puede configurar en el libro de calificaciones, aunque solo se puede editar en la página de configuración de la actividad.</p>
-<p><img alt="" src="/img/recursos/libro/libro06.png" /></p>
+<p><img alt="Número ID" src="/img/recursos/libro/libro06.png" /></p>
 <h3 id="restricciones-de-acceso"><strong>Restricciones de acceso:</strong></h3>
 <p>En esta opción se puede configurar alguna limitación en específico de consulta y acceso a este recurso. No es obligatoria su configuración, pero en caso de requerirse se debe dar clic en el botón “Añadir restricción”, en la ventana que se habilita, se puede seleccionar la restricción que más se ajuste a la necesidad: </p>
-<p><img alt="" src="/img/recursos/libro/libro07.png" /></p>
+<p><img alt="Restricciones de acceso" src="/img/recursos/libro/libro07.png" /></p>
 <ul>
 <li><em>Fecha:</em> Esta opción permite condicionar los límites de fechas en los que el estudiante puede consultar y participar de la actividad, se debe realizar el ajuste acorde como se necesite, usando las condiciones (desde y/o hasta).</li>
 </ul>
-<p><img alt="" src="/img/recursos/libro/libro08.png" /></p>
+<p><img alt="Añadir restricción" src="/img/recursos/libro/libro08.png" /></p>
 <ul>
 <li><em>Calificación:</em> Esta restricción permite condicionar que el estudiante pueda acceder al recurso siempre y cuando* haya obtenido cierta calificación en una actividad previa. </li>
 </ul>
 <p>Para incluir este tipo de restricción, debe seleccionar la actividad que debe cumplir el estudiante previamente con el rango de la nota mínima y máxima que debió haber obtenido en dicha actividad previa.</p>
-<p><img alt="" src="/img/recursos/libro/libro09.png" /></p>
+<p><img alt="Actividad a Cumplir" src="/img/recursos/libro/libro09.png" /></p>
 <ul>
 <li><em>Perfil de usuario:</em>  allí se puede condicionar que solo puedan acceder a la actividad estudiantes que cumplan con una condición específica asociada a campos del perfil de usuario.</li>
 </ul>
-<p><img alt="" src="/img/recursos/libro/libro10.png" /></p>
+<p><img alt="Perfil de Usuario" src="/img/recursos/libro/libro10.png" /></p>
 <ul>
 <li><em>Conjunto de restricciones:</em> Aquí se pueden incluir varias condiciones al mismo </li>
 </ul>
 <p>tiempo, de las anteriormente descritas y estas deben cumplirse en su totalidad para que el estudiante pueda acceder al recurso. </p>
-<p><img alt="" src="/img/recursos/libro/libro11.png" /></p>
+<p><img alt="Conjunto de Restricciones" src="/img/recursos/libro/libro11.png" /></p>
 <h3 id="finalizacion-de-actividad"><strong>Finalización de actividad</strong></h3>
 <p>Esta opción permite rastrear el grado de finalización de la actividad, ya sea manual o automáticamente, basados en determinadas condiciones, esta actividad se considera completada si el estudiante realiza la visualización del contenido. </p>
-<p><img alt="" src="/img/recursos/libro/libro12.png" /></p>
-<p><img alt="" src="/img/recursos/libro/libro13.png" /></p>
-<p><img alt="" src="/img/recursos/libro/libro14.png" /></p>
+<p><img alt="Finalización" src="/img/recursos/libro/libro12.png" /></p>
+<p><img alt="Finalización de actividad" src="/img/recursos/libro/libro13.png" /></p>
+<p><img alt="Finalizaciónde Actividad" src="/img/recursos/libro/libro14.png" /></p>
 <h3 id="marcas"><strong>Marcas</strong></h3>
 <p>Un profesor (o cualquiera con derechos de edición) puede marcar capítulos de libros.</p>
 <p>Las marcas (tags) pueden ser gestionadas por un administrador del sitio en Gestión de marcas (tags) en la Administración del Sitio. Pueden añadirse marcas al capítulo a una colección específica de marcas y se pueden sugerir o forzar marcas estándares. Si lo desea, puede deshabilitar completamente el marcar capítulos de libro.</p>
-<p><img alt="" src="/img/recursos/libro/libro15.png" /></p>
+<p><img alt="Marcas" src="/img/recursos/libro/libro15.png" /></p>
 <h3 id="competencias"><strong>Competencias</strong></h3>
-<p><img alt="" src="/img/recursos/libro/libro16.png" /></p>
+<p><img alt="Competencias" src="/img/recursos/libro/libro16.png" /></p>
 <ol>
 <li>Luego se da clic en Guardar cambio y regresar al curso</li>
 </ol>
-<p><img alt="" src="/img/recursos/libro/libro17.png" /></p>
+<p><img alt="Guardar Y regresar" src="/img/recursos/libro/libro17.png" /></p>
 <ol>
 <li>Inmediatamente carga la página principal del curso en donde ya se puede observar el recurso que se ha habilitado, seguidamente se debe dar clic en el recurso para comenzar a incluir la información.</li>
 </ol>
-<p><img alt="" src="/img/recursos/libro/libro18.png" /></p>
-<p><img alt="" src="/img/recursos/libro/libro19.png" /></p>
+<p><img alt="Libro de Inducción" src="/img/recursos/libro/libro18.png" /></p>
+<p><img alt="Añadir Capitulo" src="/img/recursos/libro/libro19.png" /></p>
 <h3 id="anadir-un-nuevo-capitulo"><strong>Añadir un nuevo capítulo</strong></h3>
 <ul>
 <li><em>Título del Capítulo:</em> Se debe colocar el nombre del capítulo que se va a crear, este campo es obligatorio de diligenciar.</li>
@@ -1340,15 +1343,15 @@
 <li><em>Contenido:</em> corresponde al cuerpo del capítulo, esta información es obligatoria, allí se puede ingresar contenido multimedia y de texto según desee. </li>
 </ul>
 <h3 id="marcas_1"><strong>Marcas</strong></h3>
-<p><img alt="" src="/img/recursos/libro/libro20.png" /></p>
+<p><img alt="Marcas " src="/img/recursos/libro/libro20.png" /></p>
 <ol>
 <li>Luego se da clic en guardar cambios.</li>
 </ol>
-<p><img alt="" src="/img/recursos/libro/libro21.png" /></p>
+<p><img alt="Añadir Nuevo Capitulo" src="/img/recursos/libro/libro21.png" /></p>
 <ol>
 <li>Seguidamente se visualiza en contenido la información ingresada anteriormente, para continuar con la inclusión de material dentro del libro se debe dar clic en el ícono Más, ubicado en el bloque tabla de contenido, parte superior izquierda. Luego repetir el proceso de creación de contenido, hasta que sea necesario. </li>
 </ol>
-<p><img alt="" src="/img/recursos/libro/libro22.png" /></p>
+<p><img alt="Vista del capitulo " src="/img/recursos/libro/libro22.png" /></p>
 
 
 

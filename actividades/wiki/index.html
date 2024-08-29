@@ -58,8 +58,10 @@
   
     
     
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label for="__drawer" class="visually-hidden">Alternar menú lateral</label>
+      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+      <label for="__search" class="visually-hidden">Buscar en el sitio</label>
+      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
@@ -118,12 +120,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
-        
         <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
-      
+      <button type="submit" class="visually-hidden">Buscar</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -746,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../taller.md" class="md-nav__link">
+      <a href="../taller" class="md-nav__link">
         Taller
       </a>
     </li>
@@ -947,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nosotros/ingenieria.md" class="md-nav__link">
+      <a href="../../nosotros/ingenieria" class="md-nav__link">
         Ingenieria
       </a>
     </li>
@@ -1113,20 +1114,20 @@
 <p>La wiki funciona como Wikipedia que es la compilación de páginas que integran diferentes personas y permite el trabajo individual y colaborativo, entre estudiantes y/o profesores. Es una actividad versátil que permite albergar en cada una de las páginas diferentes elementos audiovisuales. A continuación, se mostrará la configuración de la wiki:</p>
 <h3 id="general"><strong>General:</strong></h3>
 <p>Para empezar, debe darle un título a esta actividad, una descripción y habilitar o no la opción de que esta descripción sea visible a los estudiantes. También debe seleccionar el modo de wiki que va a utilizar que puede ser colaborativa o individual, si seleccionamos la opción individual solo el docente puede editar el contenido. Por último, puede agregar el nombre a la primera página de la wiki.</p>
-<p><img alt="" src="/img/actividades/wiki/wiki01.png" /></p>
+<p><img alt="general" src="/img/actividades/wiki/wiki01.png" /></p>
 <h3 id="formato"><strong>Formato:</strong></h3>
 <p>En este apartado puede editar el formato por defecto que manejara la página que por lo general es HTML.</p>
-<p><img alt="" src="/img/actividades/wiki/wiki02.png" /></p>
+<p><img alt="formato" src="/img/actividades/wiki/wiki02.png" /></p>
 <h3 id="ajustes-comunes-del-modulo"><strong>Ajustes comunes del módulo:</strong></h3>
 <p>En esta sección la disponibilidad permite o no mostrar esta wiki al estudiante. Esto si la wiki se trabaja con otros docentes y no con estudiantes o mantener oculta la wiki hasta que se haya terminado. También puede agregar o no un ID particular a esta actividad dentro del aula. A continuación, encontrará la opción de modo de grupo en donde se recomienda seleccionar la opción no hay grupos. Si usted maneja grupos separados dentro del aula y quiere que esta actividad se realice por grupos separados. Esto se debe hacer en la opción restringir acceso.</p>
-<p><img alt="" src="/img/actividades/wiki/wiki03.png" /></p>
+<p><img alt="Ajustes comunes" src="/img/actividades/wiki/wiki03.png" /></p>
 <h3 id="restricciones-de-acceso"><strong>Restricciones de acceso:</strong></h3>
 <p>En este apartado se puede o no restringir el acceso a esta actividad. Las opciones de restricción se muestran dando clic en el botón de añadir restricción, entre las posibilidades de restricción está: Finalización de actividad, fecha, calificación, grupo, perfil de usuario y conjunto de restricciones. Para realizar la restricción por grupos es indispensable que previamente en el aula haya grupos de estudiantes creados. </p>
 <p>Al dar clic en esta opción podrá seleccionar el grupo al cual desea agregar o restringir según sea el caso. Esta restricción es general de la wiki por ende todo lo que se incorpore tendrá esta restricción. </p>
-<p><img alt="" src="/img/actividades/wiki/wiki04.png" /></p>
+<p><img alt="Restricciones de acceso" src="/img/actividades/wiki/wiki04.png" /></p>
 <h3 id="finalizacion-de-actividad"><strong>Finalización de actividad:</strong></h3>
 <p>En este apartado encontrará las opciones de Rastreo de finalización, la cual permite que el estudiante marque de manera manual la finalización de la misma, también está la opción de marcar de manera automática o no indicar la finalización de la actividad al estudiante. Por otro lado se puede habilitar la opción de finalización de la wiki y establecer la fecha y hora de dicho cierre.</p>
-<p><img alt="" src="/img/actividades/wiki/wiki05.png" /></p>
+<p><img alt="Finalización de actividad" src="/img/actividades/wiki/wiki05.png" /></p>
 <p>Las demás opciones de marcas y competencias solo serán configurables si previamente se han establecido de manera general en el aula. De lo contrario se sugiere no modificar las opciones preestablecidas. En la parte inferior da clic en el botón de guardar cambios y mostrar.</p>
 <p>Acto seguido se abrirá la página de edición de la página uno de la wiki, en donde encontrará el cuadro de edición de contenido de Moodle. El cual maneja el formato HTML que es el genérico en la web y permite incorporar, texto, imagen, audio, video, tablas, enlaces y demás recursos audiovisuales que requiera para establecer el contenido de la página uno. En la parte inferior debe dar clic en guardar.</p>
 <p>A continuación, se muestra el contenido de la wiki que va desde la descripción general de la wiki, luego cada una de las páginas que se agregan a esta actividad. El tamaño de la wiki depende de los usuarios e intención de la actividad.</p>
@@ -1134,27 +1135,27 @@
 <ul>
 <li><strong>Editar:</strong> permite agregar nuevo contenido debe dar clic en la opción editar.</li>
 </ul>
-<p><img alt="" src="/img/actividades/wiki/wiki06.png" /></p>
+<p><img alt="Editar" src="/img/actividades/wiki/wiki06.png" /></p>
 <ul>
 <li><strong>Comentarios:</strong> ver o agregar comentarios de una página en específico.</li>
 </ul>
-<p><img alt="" src="/img/actividades/wiki/wiki07.png" /></p>
+<p><img alt="Comentarios" src="/img/actividades/wiki/wiki07.png" /></p>
 <ul>
 <li><strong>Historia:</strong> en esta sección aparecen listadas las versiones y personas que han editado esta página.</li>
 </ul>
-<p><img alt="" src="/img/actividades/wiki/wiki08.png" /></p>
+<p><img alt="Historia" src="/img/actividades/wiki/wiki08.png" /></p>
 <ul>
 <li><strong>Mapa:</strong> muestra la estructura de navegación que se va generado al agregar una página a la wiki y permite acceder a cada una de ellas de manera rápida. La disposición de organización por defecto es por orden alfabético, pero se puede seleccionar la que más se adecue a la estructura de navegación.</li>
 </ul>
-<p><img alt="" src="/img/actividades/wiki/wiki09.png" /></p>
+<p><img alt="Mapa" src="/img/actividades/wiki/wiki09.png" /></p>
 <ul>
 <li><strong>Ficheros:</strong> muestran los archivos adjuntos utilizados en la página seleccionada y también permite adjuntar uno nuevo.</li>
 </ul>
-<p><img alt="" src="/img/actividades/wiki/wiki10.png" /></p>
+<p><img alt="Ficheros" src="/img/actividades/wiki/wiki10.png" /></p>
 <ul>
 <li><strong>Administración:</strong> solo habilitado para los editores y desde acá se puede editar toda la wiki al agregar o eliminar contenido específico. </li>
 </ul>
-<p><img alt="" src="/img/actividades/wiki/wiki11.png" /></p>
+<p><img alt="Administración" src="/img/actividades/wiki/wiki11.png" /></p>
 
 
 
